@@ -1,6 +1,0 @@
-sentence_id;word_index;word;is_numeric;is_punctuation;is_stopword;is_pronoun;pos;pos_id;dep_label;dep_id;ent_label;ent_id;depth_in_tree;num_dependents;dataset
-0;0;A;0;0;1;0;DET;0;det;0;NONE;0;3;0;snli
-0;1;person;0;0;0;0;NOUN;1;nsubj;1;NONE;0;2;2;snli
-0;2;on;0;0;1;0;ADP;2;prep;2;NONE;0;3;1;snli
-0;3;a;0;0;1;0;DET;0;det;0;NONE;0;5;0;snli
-0;4;horse;0;0;0;0;NOUN;1;pobj;3;NONE;0;4;1;snli

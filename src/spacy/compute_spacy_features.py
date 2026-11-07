@@ -3,20 +3,20 @@ compute_spacy_features.py
 Author: Zakaria JOUILIL
 
 Description:
-    Compute initial spacy features (before tokenization) for the merged datasets :
+    Compute initial spacy features (before tokenization) for each dataset :
         - Token-specific features : is_numeric & entity_label
         - Grammatical features : is_punctuation, is_stopword, is_pronoun & pos_id
         - Syntactic features : dependency_label, depth_in_tree & num_dependents
 
 Inputs:
-    - data/cleaned/merged_datasets.csv
+    - data/cleaned/snli_filtered.csv (example)
 
 Outputs:
-    - outputs/spacy/spacy_features.csv
+    - outputs/spacy/spacy_snli_features.csv
     - outputs/spacy/spacy_label_maps (dynamic dictionnaries)
 
 Usage:
-    python -m src.spacy.compute_spacy_features --input data/cleaned/merged_datasets.csv --output outputs/spacy/spacy_features.csv
+    python -m src.spacy.compute_spacy_features --input data/cleaned/snli_filtered.csv --output outputs/spacy/spacy_snli_features.csv --label spacy_snli_label_maps.json
 """
 
 import pandas as pd
@@ -36,12 +36,14 @@ parser.add_argument("--input", type=str, default="data/cleaned/merged_datasets.c
                         help="Input CSV path")
 parser.add_argument("--output", type=str, default="outputs/spacy/spacy_features.csv",
                         help="Output CSV path")
+parser.add_argument("--label", type=str, required=True,
+                    help="Label used to name the spaCy label maps file")
 
 args = parser.parse_args()
 
 INPUT_CSV = get_project_path(*args.input.split("/"))
 OUTPUT_CSV = get_project_path(*args.output.split("/"))
-LABEL_MAP_PATH = get_project_path("outputs", "spacy", "spacy_label_maps.json")
+LABEL_MAP_PATH = get_project_path("outputs", "spacy", f"{args.label}_label_maps.json")
 
 print("\n[INFO] Loading spaCy model...")
 nlp = spacy.load("en_core_web_sm")

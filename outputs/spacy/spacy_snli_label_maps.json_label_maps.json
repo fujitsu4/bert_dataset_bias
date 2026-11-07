@@ -15,7 +15,8 @@
         "PROPN": 12,
         "CCONJ": 13,
         "INTJ": 14,
-        "SYM": 15
+        "SYM": 15,
+        "X": 16
     },
     "dep2id": {
         "det": 0,
@@ -61,8 +62,7 @@
         "csubj": 40,
         "parataxis": 41,
         "csubjpass": 42,
-        "preconj": 43,
-        "meta": 44
+        "preconj": 43
     },
     "ent2id": {
         "NONE": 0,
@@ -81,8 +81,7 @@
         "PRODUCT": 13,
         "LOC": 14,
         "EVENT": 15,
-        "LAW": 16,
-        "PERCENT": 17,
-        "LANGUAGE": 18
+        "LANGUAGE": 16,
+        "PERCENT": 17
     }
 }
