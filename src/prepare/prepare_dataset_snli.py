@@ -8,7 +8,7 @@ Description:
         - Removing sentences < 8 words
         - Removing sentences with semicolons (incompatible with SpaCy tokenization logic)
         - Keeping only sentences with exactly one syntactic ROOT
-        - Selecting the first 2500 valid sentences
+        - Selecting the first 10000 valid sentences
 
 Inputs:
     - None (dataset is downloaded automatically from HuggingFace)
@@ -18,7 +18,7 @@ Outputs:
     - logs/rejected_snli.txt   # rejected sentences
 
 Usage:
-    python -m src.prepare.prepare_dataset_snli --output data/cleaned/snli_filtered.csv --target 2500
+    python -m src.prepare.prepare_dataset_snli --output data/cleaned/snli_filtered.csv --target 10000
 """
 
 from datasets import load_dataset
@@ -35,7 +35,7 @@ import argparse
 parser = argparse.ArgumentParser(description="Prepare SNLI dataset")
 parser.add_argument("--output", type=str, default="data/cleaned/snli_filtered.csv",
                         help="Output CSV path")
-parser.add_argument("--target", type=int, default=2500,
+parser.add_argument("--target", type=int, default=10000,
                         help="Number of sentences to keep")
 args = parser.parse_args()
 
@@ -44,7 +44,7 @@ OUTPUT = get_project_path(*args.output.split("/"))
 
 MIN_WORDS = 8
 print("[INFO] Loading SNLI dataset...")
-ds = load_dataset("snli", split="train")
+ds = load_dataset("stanfordnlp/snli", split="train")
 
 nlp = spacy.load("en_core_web_sm")
 
