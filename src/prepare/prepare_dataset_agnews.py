@@ -10,7 +10,7 @@ Description:
         - Keeping only sentences with exactly one syntactic ROOT
         - Removing sentences containing POS = 'X'
         - Removing sentences with incoherent punctuation (POS = 'PUNCT' but not a real punctuation)
-        - Selecting the first 2500 valid sentences
+        - Selecting the first 10000 valid sentences
 
 Inputs:
     - None (dataset is downloaded automatically from HuggingFace)
@@ -20,7 +20,7 @@ Outputs:
     - logs/rejected_agnews.txt   # rejected sentences
 
 Usage:
-    python -m src.prepare.prepare_dataset_agnews --output data/cleaned/agnews_filtered.csv --target 2500
+    python -m src.prepare.prepare_dataset_agnews --output data/cleaned/agnews_filtered.csv --target 10000
 """
 from datasets import load_dataset
 import pandas as pd
@@ -36,7 +36,7 @@ from src.utils.paths import get_project_path
 parser = argparse.ArgumentParser(description="Prepare agnews dataset")
 parser.add_argument("--output", type=str, default="data/cleaned/agnews_filtered.csv",
                         help="Output CSV path")
-parser.add_argument("--target", type=int, default=2500,
+parser.add_argument("--target", type=int, default=10000,
                         help="Number of sentences to keep")
 args = parser.parse_args()
 
@@ -45,8 +45,8 @@ OUTPUT = get_project_path(*args.output.split("/"))
 
 MIN_WORDS = 8
 print("[INFO] Loading AG News dataset...")
-ds = load_dataset("ag_news", split="train")
-ds = ds.shuffle(seed=42).select(range(6000)) # TARGET * 2 not sufficient here !
+ds = load_dataset("fancyzhx/ag_news", split="train")
+ds = ds.shuffle(seed=42).select(range(25000)) # TARGET * 2 not sufficient here !
 print("[INFO] Subset length:", len(ds))
 
 nlp = spacy.load("en_core_web_sm")
