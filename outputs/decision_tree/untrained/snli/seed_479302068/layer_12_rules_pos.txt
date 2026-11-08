@@ -1,0 +1,17 @@
+|--- position_in_sentence <= 2.500000
+|   |--- word_sentence_frequency <= 4413.000000
+|   |   |--- word_sentence_frequency <= 824.500000
+|   |   |   |--- word_sentence_frequency <= 518.000000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 2.500000
+|   |--- word_sentence_frequency <= 4413.000000
+|   |   |--- word_sentence_frequency >  824.500000
+|   |   |   |--- token_relative_frequency >  0.049390
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  2.500000
+|   |--- word_burstiness >  -0.393606
+|   |   |--- position_in_sentence >  20.500000
+|   |   |   |--- position_in_sentence <= 21.500000
+|   |   |   |   |--- class: 1

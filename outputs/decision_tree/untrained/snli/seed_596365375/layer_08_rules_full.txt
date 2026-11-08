@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 2.500000
+|   |--- dep_id <= 27.500000
+|   |   |--- token_relative_frequency <= 0.093074
+|   |   |   |--- token_relative_frequency <= 0.057983
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_relative_frequency >  0.057983
+|   |   |   |   |--- class: 0
+|   |   |--- token_relative_frequency >  0.093074
+|   |   |   |--- position_in_sentence <= 1.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  1.500000
+|   |   |   |   |--- class: 0
+|   |--- dep_id >  27.500000
+|   |   |--- token_rank <= 57.500000
+|   |   |   |--- relative_position <= 0.057190
+|   |   |   |   |--- class: 1
+|   |   |   |--- relative_position >  0.057190
+|   |   |   |   |--- class: 1
+|   |   |--- token_rank >  57.500000
+|   |   |   |--- token_relative_frequency <= 0.095455
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_relative_frequency >  0.095455
+|   |   |   |   |--- class: 0
+|--- position_in_sentence >  2.500000
+|   |--- position_in_sentence <= 4.500000
+|   |   |--- word_burstiness <= -0.393606
+|   |   |   |--- relative_position <= 0.218254
+|   |   |   |   |--- class: 1
+|   |   |   |--- relative_position >  0.218254
+|   |   |   |   |--- class: 1
+|   |   |--- word_burstiness >  -0.393606
+|   |   |   |--- relative_position <= 0.269697
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.269697
+|   |   |   |   |--- class: 1
+|   |--- position_in_sentence >  4.500000
+|   |   |--- word_burstiness <= -0.393606
+|   |   |   |--- word_burstiness <= -0.513250
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_burstiness >  -0.513250
+|   |   |   |   |--- class: 1
+|   |   |--- word_burstiness >  -0.393606
+|   |   |   |--- prev_pos_id <= 0.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- prev_pos_id >  0.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    12 |       261 |   250 | 0.9579
+    20 |     13111 | 11815 | 0.9012
+    27 |      7645 |  5609 | 0.7337
+    11 |        22 |    15 | 0.6818
+    19 |      5092 |  3290 | 0.6461
+    23 |       851 |   428 | 0.5029
+     7 |      3244 |  1120 | 0.3453
+    26 |     75003 | 23258 | 0.3101
+    29 |     10019 |  3027 | 0.3021
+    22 |       946 |   137 | 0.1448
+     5 |     10366 |   699 | 0.0674
+     8 |      3472 |   228 | 0.0657
+    15 |        20 |     1 | 0.0500
+    30 |      8509 |    89 | 0.0105
+     4 |     12577 |    34 | 0.0027
+    14 |        38 |     0 | 0.0000

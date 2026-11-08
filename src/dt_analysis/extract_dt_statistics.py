@@ -61,6 +61,7 @@ def parse_rules_file(path, layer, model, seed=None):
                 features_in_path.append(feat)
 
                 rows_features.append({
+                    "dataset": DATASET,
                     "model": model,
                     "seed": seed,
                     "layer": layer,
@@ -70,6 +71,7 @@ def parse_rules_file(path, layer, model, seed=None):
 
         if features_in_path:
             rows_patterns.append({
+                "dataset": DATASET,
                 "model": model,
                 "seed": seed,
                 "layer": layer,
@@ -121,13 +123,17 @@ def process_one_model(input_dir, model, seed, output_dir):
     # ------------------------------
     df_patterns = pd.DataFrame(all_patterns)
 
-    suffix = "pretrained" if seed is None else f"untrained_seed_{seed:06d}"
+    suffix = (
+        f"{DATASET}_pretrained"
+        if seed is None
+        else f"{DATASET}_untrained_seed_{seed:06d}"
+    )
 
     f_feat = output_dir / f"dt_features_depth_{suffix}.csv"
     f_pat = output_dir / f"dt_patterns_{suffix}.csv"
 
-    df_features.to_csv(f_feat, sep =";", index=False)
-    df_patterns.to_csv(f_pat, sep =";", index=False)
+    df_features.to_csv(f_feat, sep=";", index=False)
+    df_patterns.to_csv(f_pat, sep=";", index=False)
 
     print(f"[OK] Saved {f_feat}")
     print(f"[OK] Saved {f_pat}")
@@ -137,22 +143,63 @@ def process_one_model(input_dir, model, seed, output_dir):
 # Main
 # ---------------------------------------------------------
 def main():
+    global DATASET
+
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_dir", required=True,
-                        help="outputs/decision_tree/pretrained OR untrained")
-    parser.add_argument("--output_dir", default="outputs/dt_analysis",
-                        help="Directory where CSVs will be saved")
+
+    parser.add_argument(
+        "--dataset",
+        type=str,
+        required=True,
+        choices=["snli", "mnli", "agnews", "arxiv"],
+        help="Dataset being processed"
+    )
+
+    parser.add_argument(
+        "--model",
+        type=str,
+        required=True,
+        choices=["pretrained", "untrained"],
+        help="BERT model type"
+    )
+
     args = parser.parse_args()
 
-    input_dir = Path(args.input_dir)
-    output_dir = Path(args.output_dir)
+    DATASET = args.dataset
+    MODEL = args.model
+
+    # -----------------------------------------------------
+    # INPUT DIRECTORY
+    # -----------------------------------------------------
+    if MODEL == "pretrained":
+        input_dir = Path(
+            f"outputs/decision_tree/pretrained/{DATASET}"
+        )
+    else:
+        input_dir = Path(
+            f"outputs/decision_tree/untrained/{DATASET}"
+        )
+
+    # -----------------------------------------------------
+    # OUTPUT DIRECTORY
+    # -----------------------------------------------------
+    output_dir = Path(
+        f"outputs/dt_analysis/{DATASET}/{MODEL}"
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not input_dir.exists():
+        raise FileNotFoundError(
+            f"Input directory not found: {input_dir}"
+        )
 
     # -----------------------------------------------------
     # PRETRAINED
     # -----------------------------------------------------
-    if any(p.name.startswith("layer_") for p in input_dir.iterdir()):
-        print("[INFO] Detected PRETRAINED model")
+    if MODEL == "pretrained":
+        print(f"[INFO] Dataset: {DATASET}")
+        print("[INFO] Processing PRETRAINED model")
+
         process_one_model(
             input_dir=input_dir,
             model="pretrained",
@@ -164,22 +211,34 @@ def main():
     # -----------------------------------------------------
     # UNTRAINED (seed directories)
     # -----------------------------------------------------
-    print("[INFO] Detected UNTRAINED model")
+    print(f"[INFO] Dataset: {DATASET}")
+    print("[INFO] Processing UNTRAINED model")
 
-    for d in sorted(input_dir.iterdir()):
-        if not d.is_dir() or not d.name.startswith("seed_"):
-            continue
+    seed_dirs = sorted(
+        d for d in input_dir.iterdir()
+        if d.is_dir() and d.name.startswith("seed_")
+    )
 
+    if not seed_dirs:
+        print(f"[WARN] No seed directories found in {input_dir}")
+        return
+
+    for d in seed_dirs:
         seed = int(d.name.replace("seed_", ""))
 
-        out_feat = output_dir / f"dt_features_depth_untrained_seed_{seed:06d}.csv"
-        out_pat = output_dir / f"dt_patterns_untrained_seed_{seed:06d}.csv"
+        out_feat = output_dir / (
+            f"dt_features_depth_{DATASET}_untrained_seed_{seed:06d}.csv"
+        )
+        out_pat = output_dir / (
+            f"dt_patterns_{DATASET}_untrained_seed_{seed:06d}.csv"
+        )
 
         if out_feat.exists() and out_pat.exists():
             print(f"[SKIP] Seed {seed} already processed")
             continue
 
         print(f"[RUN] Processing seed {seed}")
+
         process_one_model(
             input_dir=d,
             model="untrained",
@@ -189,4 +248,5 @@ def main():
 
 
 if __name__ == "__main__":
+    DATASET = None
     main()

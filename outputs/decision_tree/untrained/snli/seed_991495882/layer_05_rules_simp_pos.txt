@@ -1,0 +1,16 @@
+|--- depth_in_tree <= 2.500000
+|   |--- position_in_sentence <= 3.500000
+|   |   |--- relative_position <= 0.116516
+|   |   |   |--- word_burstiness >  -0.724562
+|   |   |   |   |--- class: 1
+
+|--- depth_in_tree <= 2.500000
+|   |--- position_in_sentence <= 3.500000
+|   |   |--- relative_position >  0.116516
+|   |   |   |   |--- class: 1
+
+|--- depth_in_tree >  2.500000
+|   |--- pos_id >  0.500000
+|   |   |--- position_in_sentence <= 3.500000
+|   |   |   |--- relative_position >  0.116516
+|   |   |   |   |--- class: 1

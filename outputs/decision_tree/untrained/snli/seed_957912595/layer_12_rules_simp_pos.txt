@@ -1,0 +1,22 @@
+|--- word_burstiness <= -0.550684
+|   |--- position_in_sentence <= 3.500000
+|   |   |--- relative_position <= 0.086335
+|   |   |   |--- ent_id >  0.500000
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness <= -0.550684
+|   |--- position_in_sentence <= 3.500000
+|   |   |--- relative_position >  0.086335
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness <= -0.550684
+|   |--- position_in_sentence >  3.500000
+|   |   |--- word_sentence_frequency >  6989.000000
+|   |   |   |--- position_in_sentence <= 12.500000
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness >  -0.550684
+|   |--- relative_position >  0.698485
+|   |   |--- position_in_sentence <= 12.500000
+|   |   |   |--- position_in_sentence >  10.500000
+|   |   |   |   |--- class: 1

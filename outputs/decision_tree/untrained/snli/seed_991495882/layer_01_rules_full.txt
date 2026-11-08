@@ -1,0 +1,57 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 6.500000
+|   |--- is_special_token <= 0.500000
+|   |   |--- position_in_sentence <= 5.500000
+|   |   |   |--- relative_position <= 0.303846
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.303846
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  5.500000
+|   |   |   |--- token_rank <= 17.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- token_rank >  17.500000
+|   |   |   |   |--- class: 1
+|   |--- is_special_token >  0.500000
+|   |   |--- class: 1
+|--- position_in_sentence >  6.500000
+|   |--- token_rank <= 2.500000
+|   |   |--- position_in_sentence <= 9.500000
+|   |   |   |--- position_in_sentence <= 8.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  8.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  9.500000
+|   |   |   |--- position_in_sentence <= 15.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  15.500000
+|   |   |   |   |--- class: 0
+|   |--- token_rank >  2.500000
+|   |   |--- position_in_sentence <= 7.500000
+|   |   |   |--- token_rank <= 34.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  34.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  7.500000
+|   |   |   |--- position_in_sentence <= 9.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  9.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+     7 |      3596 |  3533 | 0.9825
+     9 |     10000 |  9628 | 0.9628
+     8 |      6404 |  5677 | 0.8865
+     5 |     13898 |  8272 | 0.5952
+     4 |     36102 | 13300 | 0.3684
+    23 |     16632 |  4593 | 0.2762
+    14 |      2382 |   477 | 0.2003
+    24 |     31086 |  4165 | 0.1340
+    17 |      5303 |   272 | 0.0513
+    20 |      3643 |    30 | 0.0082
+    16 |     14787 |    41 | 0.0028
+    13 |      2058 |     5 | 0.0024
+    21 |      5285 |     7 | 0.0013

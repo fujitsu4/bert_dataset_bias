@@ -1,0 +1,16 @@
+|--- prev_pos_id <= -0.500000
+|   |--- position_in_sentence <= 13.500000
+|   |   |--- token_rank <= 62.000000
+|   |   |   |--- word_sentence_frequency <= 5857.000000
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id <= -0.500000
+|   |--- position_in_sentence <= 13.500000
+|   |   |--- token_rank >  62.000000
+|   |   |   |--- dep_id >  4.500000
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id <= -0.500000
+|   |--- position_in_sentence >  13.500000
+|   |   |--- position_in_sentence >  14.500000
+|   |   |   |   |--- class: 1

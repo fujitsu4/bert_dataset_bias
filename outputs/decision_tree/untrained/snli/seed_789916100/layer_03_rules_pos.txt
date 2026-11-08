@@ -1,0 +1,41 @@
+|--- prev_pos_id <= -0.500000
+|   |--- token_rank <= 66.500000
+|   |   |--- token_relative_frequency <= 0.109610
+|   |   |   |--- word_sentence_frequency >  5857.000000
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id <= -0.500000
+|   |--- token_rank >  66.500000
+|   |   |--- token_rank <= 84.000000
+|   |   |   |--- token_relative_frequency >  0.060662
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id <= -0.500000
+|   |--- token_rank >  66.500000
+|   |   |--- token_rank >  84.000000
+|   |   |   |--- relative_position >  0.085145
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id >  -0.500000
+|   |--- position_in_sentence <= 2.500000
+|   |   |--- word_burstiness <= -0.783695
+|   |   |   |--- word_burstiness <= -0.841040
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id >  -0.500000
+|   |--- position_in_sentence <= 2.500000
+|   |   |--- word_burstiness >  -0.783695
+|   |   |   |--- word_burstiness <= -0.674531
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id >  -0.500000
+|   |--- position_in_sentence <= 2.500000
+|   |   |--- word_burstiness >  -0.783695
+|   |   |   |--- word_burstiness >  -0.674531
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id >  -0.500000
+|   |--- position_in_sentence >  2.500000
+|   |   |--- position_in_sentence >  12.500000
+|   |   |   |--- relative_position >  0.940285
+|   |   |   |   |--- class: 1

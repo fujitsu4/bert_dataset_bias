@@ -1,0 +1,21 @@
+|--- position_in_sentence <= 2.500000
+|   |--- dep_id >  27.500000
+|   |   |--- token_rank <= 57.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  2.500000
+|   |--- position_in_sentence <= 4.500000
+|   |   |--- word_burstiness <= -0.393606
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  2.500000
+|   |--- position_in_sentence <= 4.500000
+|   |   |--- word_burstiness >  -0.393606
+|   |   |   |--- relative_position >  0.269697
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  2.500000
+|   |--- position_in_sentence >  4.500000
+|   |   |--- word_burstiness <= -0.393606
+|   |   |   |--- word_burstiness >  -0.513250
+|   |   |   |   |--- class: 1

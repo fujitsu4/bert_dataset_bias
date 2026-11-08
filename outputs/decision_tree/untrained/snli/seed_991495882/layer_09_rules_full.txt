@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- prev_pos_id <= -0.500000
+|   |--- relative_position <= 0.096006
+|   |   |--- token_rank <= 20.000000
+|   |   |   |--- relative_position <= 0.064583
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.064583
+|   |   |   |   |--- class: 0
+|   |   |--- token_rank >  20.000000
+|   |   |   |--- token_rank <= 170.000000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  170.000000
+|   |   |   |   |--- class: 0
+|   |--- relative_position >  0.096006
+|   |   |--- position_in_sentence <= 11.500000
+|   |   |   |--- position_in_sentence <= 10.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  10.500000
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  11.500000
+|   |   |   |--- position_in_sentence <= 21.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  21.500000
+|   |   |   |   |--- class: 0
+|--- prev_pos_id >  -0.500000
+|   |--- position_in_sentence <= 7.500000
+|   |   |--- position_in_sentence <= 2.500000
+|   |   |   |--- word_sentence_frequency <= 573.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_sentence_frequency >  573.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |--- position_in_sentence <= 3.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- position_in_sentence >  3.500000
+|   |   |   |   |--- class: 1
+|   |--- position_in_sentence >  7.500000
+|   |   |--- position_in_sentence <= 8.500000
+|   |   |   |--- relative_position <= 0.763636
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.763636
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  8.500000
+|   |   |   |--- position_in_sentence <= 12.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  12.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    12 |      1476 |  1472 | 0.9973
+    22 |      9924 |  8254 | 0.8317
+    23 |     39975 | 20088 | 0.5025
+    29 |     30026 | 13286 | 0.4425
+    19 |      5718 |  2051 | 0.3587
+    15 |       684 |   176 | 0.2573
+     8 |       829 |   136 | 0.1641
+    11 |      3795 |   528 | 0.1391
+    30 |     21150 |  2745 | 0.1298
+    20 |      4145 |   432 | 0.1042
+    27 |      1788 |   140 | 0.0783
+     7 |      1594 |   118 | 0.0740
+    14 |      6052 |   237 | 0.0392
+     5 |      3967 |   100 | 0.0252
+    26 |      8212 |   134 | 0.0163
+     4 |     11841 |   103 | 0.0087

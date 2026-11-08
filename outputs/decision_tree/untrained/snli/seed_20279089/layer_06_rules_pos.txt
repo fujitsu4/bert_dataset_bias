@@ -1,0 +1,17 @@
+|--- relative_position <= 0.057418
+|   |--- token_rank >  13.500000
+|   |   |--- word_sentence_frequency >  1505.000000
+|   |   |   |--- token_relative_frequency >  0.046537
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.057418
+|   |--- position_in_sentence <= 12.500000
+|   |   |--- position_in_sentence >  10.500000
+|   |   |   |--- word_burstiness <= -0.393606
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.057418
+|   |--- position_in_sentence <= 12.500000
+|   |   |--- position_in_sentence >  10.500000
+|   |   |   |--- word_burstiness >  -0.393606
+|   |   |   |   |--- class: 1
