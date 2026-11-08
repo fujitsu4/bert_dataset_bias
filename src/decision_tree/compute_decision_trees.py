@@ -24,9 +24,7 @@ Output structure:
 
 Usage :
     Pretrained Bert :
-        !python -m src.decision_tree.compute_decision_trees \
-            --model pretrained \
-            --input_csv /content/drive/MyDrive/attention_top5_pretrained.csv
+        !python -m src.decision_tree.compute_decision_trees --model pretrained --dataset snli
 
 """
 
@@ -59,30 +57,33 @@ def main():
     parser.add_argument("--model", choices=["pretrained", "untrained"], required=True)
     parser.add_argument("--seed", type=int, default=None,
                         help="Seed required for untrained model.")
-    parser.add_argument("--input_csv", required=True,
-                        help="CSV containing top5 attention labels (and features).")
+    parser.add_argument("--dataset", type=str, required=True,
+                    choices=["snli", "mnli", "agnews", "arxiv"],
+                    help="Dataset being processed")
     args = parser.parse_args()
 
+    input_csv = f"outputs/attention/attention_top5_{args.dataset}_{args.model}.csv"
+    if args.model == "untrained":
+        input_csv = f"outputs/attention/attention_top5_{args.dataset}_untrained_seed_{args.seed:03d}.csv"
     # ----------------------------------------------
     # MODEL type and output dir
     # ----------------------------------------------
     if args.model == "pretrained":
-        out_dir = "outputs/decision_tree/pretrained"
+        out_dir = f"outputs/decision_tree/pretrained/{args.dataset}"
         ensure_dir(out_dir)
-        print(f"[INFO] PRETRAINED mode → saving to: {out_dir}")
+        print(f"[INFO] PRETRAINED mode | Dataset: {args.dataset} → saving to: {out_dir}")
 
     else:
         if args.seed is None:
             raise ValueError("Untrained mode requires --seed.")
-        out_dir = f"outputs/decision_tree/untrained/seed_{args.seed:06d}"
+        out_dir = f"outputs/decision_tree/untrained/{args.dataset}/seed_{args.seed:06d}"
         ensure_dir(out_dir)
-        print(f"[INFO] UNTRAINED mode → saving to: {out_dir}")
-
+        print(f"[INFO] UNTRAINED mode | Dataset: {args.dataset} | Seed: {args.seed} → saving to: {out_dir}")
     # ----------------------------------------------
     # LOAD DATAFRAME
     # ----------------------------------------------
-    print(f"[INFO] Loading input CSV: {args.input_csv}")
-    df = pd.read_csv(args.input_csv, sep=";", keep_default_na=False)
+    print(f"[INFO] Loading input CSV: {input_csv}")
+    df = pd.read_csv(input_csv, sep=";", keep_default_na=False)
 
     # Sanity check for required columns
     required_columns = [
