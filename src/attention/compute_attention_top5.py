@@ -22,12 +22,12 @@ Usage :
     For pretained model :
         python -m src.attention.compute_attention_top5 \
         --model pretrained \
-        --input_csv outputs/bert/bert_final_features.csv --dataset snli
+        --input_csv outputs/bert/bert_snli_final_features.csv --dataset snli
 
     For untrained model (example with seed 10) : 
         python -m src.attention.compute_attention_top5 \
         --model untrained --seed 10 \
-        --input_csv outputs/bert/bert_final_features.csv --dataset snli
+        --input_csv outputs/bert/bert_snli_final_features.csv --dataset snli
 
 """
 """

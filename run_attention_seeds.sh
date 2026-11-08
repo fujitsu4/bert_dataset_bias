@@ -9,17 +9,37 @@
 # Usage (Colab):
 # !apt-get install dos2unix -y
 # !dos2unix run_attention_seeds.sh
-# !bash run_attention_seeds.sh /content/llm_bias_with_dt/outputs/attention/seeds_list.txt --max-runs 3
+# !bash run_attention_seeds.sh /content/bert_dataset_bias/outputs/attention/seeds_list.txt snli --max-runs 5
 
 
 set -uo pipefail
 
 SEEDS_FILE="${1:-seeds_list.txt}"
+DATASET="${2:-}"
+
+if [[ -z "$DATASET" ]]; then
+  echo "ERROR: dataset is required."
+  echo "Usage: bash run_attention_seeds.sh seeds_list.txt snli --max-runs 3"
+  exit 2
+fi
+
+# Validate dataset
+if [[ ! "$DATASET" =~ ^(snli|mnli|agnews|arxiv)$ ]]; then
+  echo "ERROR: Invalid dataset: $DATASET"
+  echo "Allowed datasets: snli, mnli, agnews, arxiv"
+  exit 2
+fi
+
 MAX_RUNS=5
 
-# optional arg --max-runs N
-if [[ "${2:-}" == "--max-runs" && -n "${3:-}" ]]; then
-  MAX_RUNS="$3"
+# Optional argument --max-runs N
+if [[ "${3:-}" == "--max-runs" && -n "${4:-}" ]]; then
+  MAX_RUNS="$4"
+fi
+
+if [[ ! "$SEEDS_FILE" ]]; then
+  echo "ERROR: seeds file not found: $SEEDS_FILE"
+  exit 2
 fi
 
 if [[ ! -f "$SEEDS_FILE" ]]; then
@@ -27,29 +47,30 @@ if [[ ! -f "$SEEDS_FILE" ]]; then
   exit 2
 fi
 
-# read the second line (SEEDS = [...]) and strip prefix + brackets
+# Read the second line (SEEDS = [...])
 SEED_LINE=$(sed -n '2p' "$SEEDS_FILE" | sed -e 's/^SEEDS *= *//')
-# remove surrounding [ ]
 SEED_LINE="${SEED_LINE#[}"
 SEED_LINE="${SEED_LINE%]}"
 
-# split by comma into an array
 IFS=',' read -ra RAW <<< "$SEED_LINE"
 
-# prepare output dir
+# Prepare output directory
 OUT_DIR="outputs/attention"
 mkdir -p "$OUT_DIR"
 
 runs=0
 
 for raw in "${RAW[@]}"; do
-  # trim whitespace
   seed="$(echo "$raw" | xargs)"
+
   if [[ -z "$seed" ]]; then
     continue
   fi
 
-  out_file="${OUT_DIR}/attention_top5_untrained_seed_${seed}.csv"
+  # Match Python's three-digit seed formatting
+  printf -v seed_padded "%03d" "$seed"
+
+  out_file="${OUT_DIR}/attention_top5_${DATASET}_untrained_seed_${seed_padded}.csv"
 
   if [[ -f "$out_file" ]]; then
     echo "[SKIP] seed ${seed} -> ${out_file} already exists"
@@ -57,22 +78,27 @@ for raw in "${RAW[@]}"; do
   fi
 
   if (( runs >= MAX_RUNS )); then
-    echo "[INFO] Reached max runs (${MAX_RUNS}) in this invocation. Stopping."
+    echo "[INFO] Reached max runs (${MAX_RUNS}). Stopping."
     exit 0
   fi
 
-  echo "[RUN] seed=${seed} -> launching compute_attention_top5.py"
-  python /content/llm_bias_with_dt/src/attention/compute_attention_top5.py --model untrained --seed "${seed}" --input_csv /content/llm_bias_with_dt/outputs/bert/bert_final_features.csv
+  echo "[RUN] dataset=${DATASET}, seed=${seed}"
 
-  # check exit status
+  python /content/bert_dataset_bias/src/attention/compute_attention_top5.py \
+    --model untrained \
+    --seed "${seed}" \
+    --dataset "${DATASET}" \
+    --input_csv "/content/bert_dataset_bias/outputs/bert/bert_${DATASET}_final_features.csv"
+
   status=$?
+
   if [[ $status -ne 0 ]]; then
-    echo "[ERROR] run for seed ${seed} failed with status ${status}. Stopping."
+    echo "[ERROR] Run for seed ${seed} failed with status ${status}. Stopping."
     exit $status
   fi
 
   ((runs++))
 done
 
-echo "[DONE] Completed up to ${runs} runs in this invocation."
+echo "[DONE] Dataset=${DATASET} | Completed ${runs} runs."
 exit 0
