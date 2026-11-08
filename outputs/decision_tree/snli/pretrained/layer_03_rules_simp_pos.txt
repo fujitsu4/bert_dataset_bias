@@ -1,0 +1,20 @@
+|--- next_pos_id <= -0.500000
+|   |--- token_rank <= 3.500000
+|   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- token_rank >  3.500000
+|   |   |--- num_subtokens <= 1.500000
+|   |   |   |--- prev_pos_id <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- pos_id <= 12.500000
+|   |   |--- position_in_sentence <= 3.500000
+|   |   |   |--- word_sentence_frequency >  3051.000000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- pos_id >  12.500000
+|   |   |--- token_rank <= 20.000000
+|   |   |   |   |--- class: 1

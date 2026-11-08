@@ -1,0 +1,2 @@
+|--- word_burstiness >  -0.115912
+|   |   |   |   |--- class: 1

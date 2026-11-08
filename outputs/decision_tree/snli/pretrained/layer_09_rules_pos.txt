@@ -1,0 +1,47 @@
+|--- next_pos_id <= -0.500000
+|   |--- token_relative_frequency <= 0.063508
+|   |   |--- num_subtokens <= 1.500000
+|   |   |   |--- relative_position <= 0.967204
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- token_relative_frequency <= 0.063508
+|   |   |--- num_subtokens <= 1.500000
+|   |   |   |--- relative_position >  0.967204
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- token_relative_frequency <= 0.063508
+|   |   |--- num_subtokens >  1.500000
+|   |   |   |--- relative_position >  0.928922
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- token_relative_frequency >  0.063508
+|   |   |--- relative_position >  0.881944
+|   |   |   |--- prev_pos_id <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- token_relative_frequency >  0.063508
+|   |   |--- relative_position >  0.881944
+|   |   |   |--- prev_pos_id >  1.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- depth_in_tree <= 2.500000
+|   |   |--- pos_id <= 2.500000
+|   |   |   |--- position_in_sentence <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- depth_in_tree <= 2.500000
+|   |   |--- pos_id >  2.500000
+|   |   |   |--- prev_pos_id <= 2.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- depth_in_tree >  2.500000
+|   |   |--- position_in_sentence <= 1.500000
+|   |   |   |--- pos_id >  10.500000
+|   |   |   |   |--- class: 1

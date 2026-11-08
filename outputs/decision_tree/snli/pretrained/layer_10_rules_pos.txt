@@ -1,0 +1,29 @@
+|--- relative_position <= 0.898980
+|   |--- word_burstiness <= -0.673569
+|   |   |--- word_sentence_frequency >  1263.000000
+|   |   |   |--- is_stopword >  0.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.898980
+|   |--- next_pos_id <= -0.500000
+|   |   |--- token_rank <= 8.500000
+|   |   |   |--- relative_position <= 0.935417
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.898980
+|   |--- next_pos_id <= -0.500000
+|   |   |--- token_rank <= 8.500000
+|   |   |   |--- relative_position >  0.935417
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.898980
+|   |--- next_pos_id <= -0.500000
+|   |   |--- token_rank >  8.500000
+|   |   |   |--- position_in_sentence <= 11.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.898980
+|   |--- next_pos_id <= -0.500000
+|   |   |--- token_rank >  8.500000
+|   |   |   |--- position_in_sentence >  11.500000
+|   |   |   |   |--- class: 1

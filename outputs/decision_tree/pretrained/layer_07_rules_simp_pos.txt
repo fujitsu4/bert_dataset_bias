@@ -1,8 +1,0 @@
-|--- relative_position <= 0.992848
-|   |--- num_dependents >  1.500000
-|   |   |--- num_subtokens <= 1.500000
-|   |   |   |--- token_relative_frequency >  0.055051
-|   |   |   |   |--- class: 1
-
-|--- relative_position >  0.992848
-|   |--- class: 1

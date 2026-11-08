@@ -1,9 +1,0 @@
-|--- next_pos_id <= -0.500000
-|   |--- relative_position <= 0.996552
-|   |   |--- num_subtokens <= 1.500000
-|   |   |   |--- token_rank <= 2.500000
-|   |   |   |   |--- class: 1
-
-|--- next_pos_id <= -0.500000
-|   |--- relative_position >  0.996552
-|   |   |--- class: 1

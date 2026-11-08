@@ -1,8 +1,0 @@
-|--- relative_position <= 0.996552
-|   |--- depth_in_tree >  2.500000
-|   |   |--- position_in_sentence <= 1.500000
-|   |   |   |--- relative_position >  0.051316
-|   |   |   |   |--- class: 1
-
-|--- relative_position >  0.996552
-|   |--- class: 1

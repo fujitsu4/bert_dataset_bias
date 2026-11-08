@@ -1,0 +1,53 @@
+|--- next_pos_id <= -0.500000
+|   |--- relative_position <= 0.897368
+|   |   |--- num_subtokens <= 1.500000
+|   |   |   |--- word_burstiness <= -0.873571
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- relative_position <= 0.897368
+|   |   |--- num_subtokens <= 1.500000
+|   |   |   |--- word_burstiness >  -0.873571
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- relative_position >  0.897368
+|   |   |--- token_rank <= 17.000000
+|   |   |   |--- relative_position <= 0.914855
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- relative_position >  0.897368
+|   |   |--- token_rank <= 17.000000
+|   |   |   |--- relative_position >  0.914855
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- relative_position >  0.897368
+|   |   |--- token_rank >  17.000000
+|   |   |   |--- is_pronoun <= 0.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- word_sentence_frequency <= 2444.000000
+|   |   |   |--- word_sentence_frequency >  5.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- word_sentence_frequency >  2444.000000
+|   |   |   |--- depth_in_tree <= 2.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- word_sentence_frequency >  2444.000000
+|   |   |   |--- depth_in_tree >  2.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- position_in_sentence >  1.500000
+|   |   |--- depth_in_tree <= 2.500000
+|   |   |   |--- pos_id >  4.500000
+|   |   |   |   |--- class: 1
