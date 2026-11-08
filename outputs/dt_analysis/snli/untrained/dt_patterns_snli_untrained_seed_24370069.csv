@@ -1,0 +1,42 @@
+dataset;model;seed;layer;pattern;pattern_length
+snli;untrained;24370069;1;position_in_sentence -> token_rank -> word_sentence_frequency;3
+snli;untrained;24370069;1;position_in_sentence -> position_in_sentence;2
+snli;untrained;24370069;1;position_in_sentence -> position_in_sentence -> word_sentence_frequency -> relative_position;4
+snli;untrained;24370069;2;position_in_sentence -> word_sentence_frequency -> word_burstiness;3
+snli;untrained;24370069;2;position_in_sentence -> word_sentence_frequency -> word_sentence_frequency;3
+snli;untrained;24370069;2;position_in_sentence -> word_sentence_frequency -> word_sentence_frequency -> relative_position;4
+snli;untrained;24370069;2;position_in_sentence -> position_in_sentence -> position_in_sentence;3
+snli;untrained;24370069;3;position_in_sentence -> token_relative_frequency -> relative_position -> pos_id;4
+snli;untrained;24370069;3;position_in_sentence -> token_relative_frequency -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;3;position_in_sentence -> token_relative_frequency -> position_in_sentence;3
+snli;untrained;24370069;3;position_in_sentence -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;4;relative_position;1
+snli;untrained;24370069;4;relative_position -> next_pos_id -> position_in_sentence;3
+snli;untrained;24370069;4;relative_position -> next_pos_id -> position_in_sentence -> token_rank;4
+snli;untrained;24370069;5;position_in_sentence -> position_in_sentence -> token_rank -> position_in_sentence;4
+snli;untrained;24370069;5;position_in_sentence -> position_in_sentence -> token_relative_frequency;3
+snli;untrained;24370069;6;next_pos_id -> position_in_sentence;2
+snli;untrained;24370069;6;next_pos_id -> position_in_sentence -> position_in_sentence -> token_relative_frequency;4
+snli;untrained;24370069;6;next_pos_id -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;6;next_pos_id -> position_in_sentence -> position_in_sentence;3
+snli;untrained;24370069;7;prev_pos_id -> position_in_sentence;2
+snli;untrained;24370069;7;prev_pos_id -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;7;prev_pos_id -> token_rank -> relative_position -> position_in_sentence;4
+snli;untrained;24370069;7;prev_pos_id -> token_rank -> word_sentence_frequency -> position_in_sentence;4
+snli;untrained;24370069;7;prev_pos_id -> token_rank -> word_sentence_frequency -> position_in_sentence;4
+snli;untrained;24370069;8;relative_position -> prev_pos_id -> position_in_sentence;3
+snli;untrained;24370069;8;relative_position -> prev_pos_id -> token_rank -> word_sentence_frequency;4
+snli;untrained;24370069;9;word_burstiness -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;9;word_burstiness -> position_in_sentence;2
+snli;untrained;24370069;9;word_burstiness -> position_in_sentence -> position_in_sentence;3
+snli;untrained;24370069;10;word_sentence_frequency -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;10;word_sentence_frequency -> position_in_sentence -> token_rank -> relative_position;4
+snli;untrained;24370069;10;word_sentence_frequency -> position_in_sentence -> token_rank;3
+snli;untrained;24370069;10;word_sentence_frequency -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;11;relative_position;1
+snli;untrained;24370069;11;relative_position -> position_in_sentence -> position_in_sentence;3
+snli;untrained;24370069;12;prev_pos_id -> pos_id -> position_in_sentence -> word_sentence_frequency;4
+snli;untrained;24370069;12;prev_pos_id -> pos_id -> position_in_sentence -> position_in_sentence;4
+snli;untrained;24370069;12;prev_pos_id -> pos_id -> token_rank -> word_burstiness;4
+snli;untrained;24370069;12;prev_pos_id -> pos_id -> token_rank -> word_sentence_frequency;4
+snli;untrained;24370069;12;prev_pos_id -> position_in_sentence -> position_in_sentence -> pos_id;4

@@ -1,0 +1,45 @@
+dataset;model;seed;layer;pattern;pattern_length
+snli;untrained;705405564;1;position_in_sentence -> word_sentence_frequency -> token_rank;3
+snli;untrained;705405564;1;position_in_sentence -> word_sentence_frequency -> token_rank -> relative_position;4
+snli;untrained;705405564;1;position_in_sentence -> word_sentence_frequency -> relative_position -> relative_position;4
+snli;untrained;705405564;1;position_in_sentence -> token_rank -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;2;position_in_sentence -> position_in_sentence -> position_in_sentence -> relative_position;4
+snli;untrained;705405564;2;position_in_sentence -> position_in_sentence -> position_in_sentence;3
+snli;untrained;705405564;2;position_in_sentence -> position_in_sentence -> position_in_sentence -> dep_id;4
+snli;untrained;705405564;2;position_in_sentence -> word_burstiness -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;3;relative_position -> word_burstiness -> position_in_sentence;3
+snli;untrained;705405564;3;relative_position -> position_in_sentence;2
+snli;untrained;705405564;3;relative_position -> position_in_sentence -> position_in_sentence;3
+snli;untrained;705405564;4;relative_position -> position_in_sentence -> token_rank -> word_sentence_frequency;4
+snli;untrained;705405564;4;relative_position -> token_rank -> position_in_sentence;3
+snli;untrained;705405564;4;relative_position -> token_rank -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;4;relative_position -> token_rank -> position_in_sentence -> relative_position;4
+snli;untrained;705405564;5;next_pos_id -> position_in_sentence -> token_rank;3
+snli;untrained;705405564;5;next_pos_id -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;5;next_pos_id -> position_in_sentence -> position_in_sentence;3
+snli;untrained;705405564;6;word_sentence_frequency -> token_relative_frequency -> relative_position -> pos_id;4
+snli;untrained;705405564;6;word_sentence_frequency -> token_relative_frequency -> dep_id -> position_in_sentence;4
+snli;untrained;705405564;6;word_sentence_frequency -> position_in_sentence -> token_rank;3
+snli;untrained;705405564;6;word_sentence_frequency -> position_in_sentence -> token_rank -> relative_position;4
+snli;untrained;705405564;6;word_sentence_frequency -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;7;position_in_sentence -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;7;position_in_sentence -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;7;position_in_sentence -> position_in_sentence -> position_in_sentence;3
+snli;untrained;705405564;8;position_in_sentence -> ent_id -> word_sentence_frequency;3
+snli;untrained;705405564;8;position_in_sentence -> position_in_sentence -> position_in_sentence;3
+snli;untrained;705405564;8;position_in_sentence -> position_in_sentence -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;9;position_in_sentence -> position_in_sentence -> token_rank -> depth_in_tree;4
+snli;untrained;705405564;9;position_in_sentence -> position_in_sentence -> position_in_sentence;3
+snli;untrained;705405564;9;position_in_sentence -> position_in_sentence -> position_in_sentence -> word_sentence_frequency;4
+snli;untrained;705405564;9;position_in_sentence -> next_pos_id -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;9;position_in_sentence -> next_pos_id -> token_rank;3
+snli;untrained;705405564;10;relative_position -> position_in_sentence -> position_in_sentence -> token_rank;4
+snli;untrained;705405564;10;relative_position -> token_rank -> position_in_sentence;3
+snli;untrained;705405564;10;relative_position -> token_rank -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;11;position_in_sentence -> is_stopword;2
+snli;untrained;705405564;11;position_in_sentence -> is_stopword -> position_in_sentence -> word_burstiness;4
+snli;untrained;705405564;11;position_in_sentence -> relative_position -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;11;position_in_sentence -> relative_position -> position_in_sentence;3
+snli;untrained;705405564;12;token_rank -> is_stopword -> position_in_sentence -> position_in_sentence;4
+snli;untrained;705405564;12;token_rank -> position_in_sentence -> token_rank -> token_relative_frequency;4
+snli;untrained;705405564;12;token_rank -> position_in_sentence -> position_in_sentence -> token_relative_frequency;4
