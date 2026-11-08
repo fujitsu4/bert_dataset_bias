@@ -1,6 +1,0 @@
-sentence_id;bert_index;bert_token;word_id;dataset
-0;0;[CLS];;snli
-0;1;A;0;snli
-0;2;person;1;snli
-0;3;on;2;snli
-0;4;a;3;snli

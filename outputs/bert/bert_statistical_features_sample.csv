@@ -1,6 +1,0 @@
-sentence_id;bert_index;bert_token;word_id;is_special_token;token_length;is_subword;position_in_sentence;relative_position;num_subtokens;token_relative_frequency;word_sentence_frequency;token_rank;word_burstiness;dataset
-0;0;[CLS];;1;5;0;0;0.0;-1;0.0;0;0;0.0;snli
-0;1;A;0.0;0;1;0;1;0.0769230769230769;1;0.08333333333333333;1540;14;-0.8924407487106201;snli
-0;2;person;1.0;0;6;0;2;0.1538461538461538;1;0.08333333333333333;96;192;-0.7545224507904409;snli
-0;3;on;2.0;0;2;0;3;0.2307692307692307;1;0.08333333333333333;2268;11;-0.4785333067468397;snli
-0;4;a;3.0;0;1;0;4;0.3076923076923077;1;0.16666666666666666;4834;4;-0.3593520924637052;snli
