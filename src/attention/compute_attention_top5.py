@@ -22,12 +22,12 @@ Usage :
     For pretained model :
         python -m src.attention.compute_attention_top5 \
         --model pretrained \
-        --input_csv outputs/bert/bert_final_features.csv
+        --input_csv outputs/bert/bert_final_features.csv --dataset snli
 
     For untrained model (example with seed 10) : 
         python -m src.attention.compute_attention_top5 \
         --model untrained --seed 10 \
-        --input_csv outputs/bert/bert_final_features.csv
+        --input_csv outputs/bert/bert_final_features.csv --dataset snli
 
 """
 """
@@ -94,6 +94,9 @@ def main():
     parser.add_argument("--input_csv", required=True)
     parser.add_argument("--top_k", type=int, default=5)
     parser.add_argument("--device", type=str, default=None)
+    parser.add_argument("--dataset", type=str, required=True,
+                    choices=["snli", "mnli", "agnews", "arxiv"],
+                    help="Dataset being processed")
     args = parser.parse_args()
 
     # -----------------------------------------------------
@@ -139,9 +142,9 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     if pretrained_flag:
-        out_name = "attention_top5_pretrained.csv"
+        out_name = f"attention_top5_{args.dataset}_pretrained.csv"
     else:
-        out_name = f"attention_top5_untrained_seed_{args.seed:03d}.csv"
+        out_name = f"attention_top5_{args.dataset}_untrained_seed_{args.seed:03d}.csv"
 
     out_path = os.path.join(out_dir, out_name)
 
