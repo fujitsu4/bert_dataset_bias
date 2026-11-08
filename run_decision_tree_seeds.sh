@@ -10,7 +10,7 @@
 # Usage (Colab):
 # !apt-get install dos2unix -y
 # !dos2unix run_decision_tree_seeds.sh
-# !bash run_decision_tree_seeds.sh /content/llm_bias_with_dt/outputs/attention/seeds_list.txt --max-runs 6
+# !bash run_decision_tree_seeds.sh /content/bert_dataset_bias/outputs/attention/seeds_list.txt --max-runs 6
 
 set -uo pipefail
 
