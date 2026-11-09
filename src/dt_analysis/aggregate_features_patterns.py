@@ -136,20 +136,55 @@ def process_untrained(input_dir, output_csv):
 # ---------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_dir", required=True,
-                        help="pretrained directory OR untrained root directory")
-    parser.add_argument("--output_csv", required=True,
-                        help="Output CSV file")
+
+    parser.add_argument(
+        "--dataset",
+        type=str,
+        required=True,
+        choices=["snli", "mnli", "agnews", "arxiv"],
+        help="Dataset being processed"
+    )
+
+    parser.add_argument(
+        "--mode",
+        required=True,
+        choices=["pretrained", "untrained"],
+        help="Processing mode"
+    )
+
     args = parser.parse_args()
 
-    input_dir = Path(args.input_dir)
+    dataset = args.dataset
+    mode = args.mode
 
-    if any(p.name.startswith("layer_") for p in input_dir.iterdir()):
-        print("[INFO] Detected PRETRAINED model")
-        process_pretrained(input_dir, Path(args.output_csv))
+    # Input directory
+    if mode == "pretrained":
+        input_dir = Path(
+            f"outputs/decision_tree/pretrained/{dataset}"
+        )
     else:
-        print("[INFO] Detected UNTRAINED model")
-        process_untrained(input_dir, Path(args.output_csv))
+        input_dir = Path(
+            f"outputs/decision_tree/untrained/{dataset}"
+        )
+
+    # Output directory
+    output_dir = Path(f"outputs/dt_analysis/{dataset}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    output_csv = output_dir / f"features_patterns_{dataset}_{mode}.csv"
+
+    if not input_dir.exists():
+        raise FileNotFoundError(
+            f"Input directory not found: {input_dir}"
+        )
+
+    if mode == "pretrained":
+        print(f"[INFO] Dataset: {dataset} | PRETRAINED")
+        process_pretrained(input_dir, output_csv)
+
+    else:
+        print(f"[INFO] Dataset: {dataset} | UNTRAINED")
+        process_untrained(input_dir, output_csv)
 
 
 if __name__ == "__main__":
