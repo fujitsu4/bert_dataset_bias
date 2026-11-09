@@ -1,40 +1,0 @@
-[2025-11-30 08:19:54 UTC] [INFO] Logging -> logs/bert_final_logs.txt
-[2025-11-30 08:19:54 UTC] [INFO] === VERIFYING FINAL FEATURES ===
-[2025-11-30 08:19:54 UTC] [INFO] Reading CSV: outputs/bert/bert_final_features.csv
-[2025-11-30 08:19:55 UTC] [INFO] 1) Checking columns presence and exact order
-[2025-11-30 08:19:55 UTC] [OK] Column names and order are EXACTLY correct.
-[2025-11-30 08:19:55 UTC] [INFO] Total rows: 301147
-[2025-11-30 08:19:55 UTC] [INFO] 2) Basic type normalization & null checks
-[2025-11-30 08:19:57 UTC] [OK] Boolean-like columns are 0/1 and normalized.
-[2025-11-30 08:19:57 UTC] [OK] Numeric columns converted/validated.
-[2025-11-30 08:19:57 UTC] [INFO] 3) Checking primary invariants and quick consistency tests
-[2025-11-30 08:19:57 UTC] [OK] bert_index == position_in_sentence for all rows.
-[2025-11-30 08:19:57 UTC] [OK] token_relative_frequency values are within [0,1].
-[2025-11-30 08:19:57 UTC] [OK] word_burstiness values are finite and within [-1,1].
-[2025-11-30 08:19:57 UTC] [OK] token_rank convention checked (non-special >=1).
-[2025-11-30 08:19:57 UTC] [OK] Special tokens have prev_pos_id and next_pos_id == -1.
-[2025-11-30 08:19:57 UTC] [OK] Non-special token fields pos_id/dep_id/ent_id/depth_in_tree/num_dependents/num_subtokens/word_sentence_frequency are present (no NA).
-[2025-11-30 08:19:57 UTC] [OK] word_id present and non-negative for all non-special tokens.
-[2025-11-30 08:19:57 UTC] [INFO] 4) Per-sentence checks (sampled + critical full checks)
-[2025-11-30 08:19:57 UTC] [INFO] Unique sentences: 10000
-[2025-11-30 08:21:40 UTC] [INFO] 4.b) Checking num_subtokens grouping consistency (exhaustive).
-[2025-11-30 08:22:24 UTC] [OK] num_subtokens is consistent and equals group size for each (sentence_id,word_id).
-[2025-11-30 08:22:24 UTC] [INFO] 4.c) Checking word_sentence_frequency propagation to sub-tokens.
-[2025-11-30 08:22:24 UTC] [OK] word_sentence_frequency is consistently propagated to sub-tokens.
-[2025-11-30 08:22:24 UTC] [INFO] 4.d) Checking prev_pos_id / next_pos_id correctness for non-special tokens (exhaustive sample).
-checking neighbors (sample):   0%|          | 0/200 [00:00<?, ?it/s]checking neighbors (sample):  13%|#3        | 26/200 [00:00<00:00, 254.13it/s]checking neighbors (sample):  27%|##7       | 54/200 [00:00<00:00, 261.80it/s]checking neighbors (sample):  40%|####      | 81/200 [00:00<00:00, 247.94it/s]checking neighbors (sample):  54%|#####4    | 108/200 [00:00<00:00, 254.66it/s]checking neighbors (sample):  68%|######8   | 137/200 [00:00<00:00, 264.29it/s]checking neighbors (sample):  82%|########2 | 165/200 [00:00<00:00, 268.25it/s]checking neighbors (sample):  96%|#########6| 193/200 [00:00<00:00, 270.44it/s]checking neighbors (sample): 100%|##########| 200/200 [00:00<00:00, 264.61it/s]
-[2025-11-30 08:22:25 UTC] [OK] prev_pos_id and next_pos_id appear consistent with word-level pos_id on sampled sentences.
-[2025-11-30 08:22:25 UTC] [INFO] 4.e) Checking contiguous word_id ranges per sentence (warn on gaps).
-[2025-11-30 08:22:26 UTC] [OK] word_id ranges appear contiguous and start at 0 on sampled sentences.
-[2025-11-30 08:22:26 UTC] [INFO] 5) Cross-feature logical checks (a set of logical rules)
-[2025-11-30 08:22:26 UTC] [OK] is_pronoun implies valid pos_id where applicable.
-[2025-11-30 08:22:26 UTC] [OK] is_punctuation flags consistent with token strings (quick check).
-[2025-11-30 08:22:26 UTC] [OK] is_numeric flags consistent with token strings (quick heuristic).
-[2025-11-30 08:22:26 UTC] [INFO] 6) Summary diagnostics (final)
-[2025-11-30 08:22:26 UTC] [INFO] Unique sentences: 10000
-[2025-11-30 08:22:26 UTC] [INFO] Unique bert_token types: 16898
-[2025-11-30 08:22:26 UTC] [INFO] Total rows: 301147
-[2025-11-30 08:22:26 UTC] [INFO] Special tokens (rows): 20000
-[2025-11-30 08:22:26 UTC] [OK] Basic summary computed.
-[2025-11-30 08:22:26 UTC] [INFO] === ALL CHECKS COMPLETED ===
-[2025-11-30 08:22:26 UTC] [INFO] If no [ERROR]/fatal occurred above, file is verified (warnings may be present).

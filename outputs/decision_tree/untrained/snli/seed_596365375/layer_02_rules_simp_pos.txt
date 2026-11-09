@@ -1,8 +1,0 @@
-|--- relative_position <= 0.007812
-|   |--- class: 1
-
-|--- relative_position >  0.007812
-|   |--- relative_position >  0.354503
-|   |   |--- relative_position <= 0.889757
-|   |   |   |--- token_relative_frequency >  0.089572
-|   |   |   |   |--- class: 1

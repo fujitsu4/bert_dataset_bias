@@ -1,2 +1,0 @@
-|--- position_in_sentence <= 1.500000
-|   |   |   |--- class: 1

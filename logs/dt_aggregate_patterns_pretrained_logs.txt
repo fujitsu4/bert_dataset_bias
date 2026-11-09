@@ -1,3 +1,0 @@
-[INFO] Verifying pretrained pattern aggregation
-[INFO] Reconstructed 33 unique patterns
-[OK] Pretrained pattern aggregation verified successfully

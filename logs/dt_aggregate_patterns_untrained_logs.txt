@@ -1,4 +1,0 @@
-[INFO] Verifying untrained pattern aggregation
-[INFO] Detected 30 seed directories
-[INFO] Reconstructed 376 unique patterns
-[OK] Untrained pattern aggregation verified successfully
