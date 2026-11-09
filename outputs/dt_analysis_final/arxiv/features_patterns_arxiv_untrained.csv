@@ -1,0 +1,370 @@
+pattern;occurrences;seed_count
+position_in_sentence -> position_in_sentence -> position_in_sentence -> position_in_sentence;62;27
+relative_position -> position_in_sentence -> position_in_sentence -> position_in_sentence;52;22
+position_in_sentence -> position_in_sentence -> position_in_sentence;42;22
+relative_position;30;19
+relative_position -> position_in_sentence -> position_in_sentence;30;18
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> position_in_sentence;30;15
+word_sentence_frequency -> position_in_sentence -> position_in_sentence;19;14
+position_in_sentence -> position_in_sentence -> position_in_sentence -> relative_position;19;13
+position_in_sentence -> position_in_sentence -> position_in_sentence -> token_rank;13;12
+position_in_sentence -> position_in_sentence -> relative_position;15;11
+position_in_sentence -> relative_position -> position_in_sentence -> position_in_sentence;12;9
+word_burstiness -> position_in_sentence -> position_in_sentence -> position_in_sentence;14;8
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> relative_position;11;8
+position_in_sentence -> position_in_sentence;9;8
+word_burstiness -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;10;7
+position_in_sentence -> position_in_sentence -> position_in_sentence -> word_burstiness;7;7
+position_in_sentence -> token_rank -> position_in_sentence -> position_in_sentence;8;6
+token_rank -> position_in_sentence -> position_in_sentence -> position_in_sentence;7;6
+position_in_sentence -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;7;6
+position_in_sentence -> word_burstiness -> position_in_sentence -> position_in_sentence;7;6
+position_in_sentence -> position_in_sentence -> relative_position -> token_rank;6;6
+position_in_sentence -> position_in_sentence -> word_burstiness;6;6
+word_sentence_frequency -> position_in_sentence -> relative_position -> position_in_sentence;9;5
+position_in_sentence -> position_in_sentence -> position_in_sentence -> word_sentence_frequency;8;5
+position_in_sentence -> position_in_sentence -> token_rank -> token_rank;7;5
+token_rank -> relative_position -> position_in_sentence -> position_in_sentence;7;5
+word_sentence_frequency -> position_in_sentence -> relative_position;6;5
+position_in_sentence -> position_in_sentence -> token_rank;6;5
+position_in_sentence -> token_rank -> token_rank -> position_in_sentence;5;5
+position_in_sentence -> position_in_sentence -> word_burstiness -> word_sentence_frequency;5;5
+word_burstiness -> position_in_sentence -> position_in_sentence;5;4
+token_relative_frequency -> position_in_sentence -> position_in_sentence -> position_in_sentence;4;4
+relative_position -> position_in_sentence;4;4
+relative_position -> position_in_sentence -> position_in_sentence -> relative_position;4;4
+word_burstiness -> relative_position -> position_in_sentence -> position_in_sentence;4;4
+position_in_sentence -> position_in_sentence -> token_relative_frequency;4;4
+position_in_sentence -> position_in_sentence -> word_sentence_frequency;4;4
+position_in_sentence -> position_in_sentence -> token_rank -> relative_position;4;4
+position_in_sentence -> word_sentence_frequency -> word_sentence_frequency;4;4
+word_sentence_frequency -> token_rank -> position_in_sentence -> position_in_sentence;4;3
+position_in_sentence -> position_in_sentence -> relative_position -> word_burstiness;4;3
+position_in_sentence -> position_in_sentence -> word_sentence_frequency -> token_rank;3;3
+word_sentence_frequency -> token_rank -> position_in_sentence;3;3
+position_in_sentence -> position_in_sentence -> token_rank -> word_sentence_frequency;3;3
+position_in_sentence -> word_sentence_frequency;3;3
+position_in_sentence -> position_in_sentence -> word_sentence_frequency -> position_in_sentence;3;3
+position_in_sentence -> position_in_sentence -> relative_position -> position_in_sentence;3;3
+position_in_sentence -> relative_position -> position_in_sentence -> relative_position;3;3
+word_sentence_frequency -> relative_position -> relative_position -> relative_position;3;3
+word_sentence_frequency -> relative_position -> relative_position -> position_in_sentence;3;3
+position_in_sentence -> word_sentence_frequency -> token_rank;3;3
+word_burstiness -> token_rank -> position_in_sentence -> position_in_sentence;3;3
+position_in_sentence -> pos_id -> word_sentence_frequency -> position_in_sentence;3;3
+position_in_sentence -> word_sentence_frequency -> relative_position -> position_in_sentence;3;3
+token_rank -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;3;2
+token_rank -> token_relative_frequency -> position_in_sentence -> position_in_sentence;3;2
+position_in_sentence -> word_sentence_frequency -> position_in_sentence;3;2
+word_burstiness -> position_in_sentence;2;2
+word_burstiness -> position_in_sentence -> position_in_sentence -> relative_position;2;2
+token_relative_frequency -> position_in_sentence -> position_in_sentence;2;2
+position_in_sentence -> position_in_sentence -> word_sentence_frequency -> relative_position;2;2
+word_burstiness -> relative_position -> position_in_sentence;2;2
+prev_pos_id -> word_sentence_frequency;2;2
+position_in_sentence -> relative_position -> position_in_sentence -> token_rank;2;2
+position_in_sentence -> word_burstiness -> position_in_sentence -> token_rank;2;2
+position_in_sentence -> word_sentence_frequency -> word_sentence_frequency -> token_length;2;2
+position_in_sentence -> position_in_sentence -> relative_position -> token_length;2;2
+token_rank -> position_in_sentence -> token_rank;2;2
+word_sentence_frequency -> position_in_sentence -> relative_position -> token_relative_frequency;2;2
+position_in_sentence -> position_in_sentence -> word_burstiness -> relative_position;2;2
+is_punctuation -> token_rank -> position_in_sentence -> position_in_sentence;2;2
+pos_id -> position_in_sentence -> position_in_sentence -> position_in_sentence;2;2
+position_in_sentence -> token_rank -> word_sentence_frequency;2;2
+word_sentence_frequency -> relative_position -> relative_position;2;2
+position_in_sentence -> position_in_sentence -> word_sentence_frequency -> word_burstiness;2;2
+position_in_sentence -> position_in_sentence -> token_rank -> word_burstiness;2;2
+position_in_sentence -> position_in_sentence -> is_pronoun -> token_rank;2;2
+position_in_sentence -> word_burstiness -> word_burstiness;2;2
+position_in_sentence -> position_in_sentence -> is_punctuation -> position_in_sentence;2;2
+position_in_sentence -> word_burstiness -> word_sentence_frequency;2;2
+position_in_sentence -> position_in_sentence -> relative_position -> word_sentence_frequency;2;2
+position_in_sentence -> position_in_sentence -> position_in_sentence -> pos_id;2;2
+position_in_sentence -> is_punctuation -> position_in_sentence -> position_in_sentence;2;2
+position_in_sentence -> pos_id -> word_burstiness -> position_in_sentence;2;2
+position_in_sentence -> token_rank -> position_in_sentence;2;2
+position_in_sentence -> word_burstiness;2;2
+position_in_sentence -> position_in_sentence -> word_burstiness -> position_in_sentence;2;2
+relative_position -> word_sentence_frequency -> position_in_sentence;2;2
+position_in_sentence -> position_in_sentence -> is_pronoun -> word_sentence_frequency;2;2
+position_in_sentence -> word_sentence_frequency -> token_rank -> word_sentence_frequency;2;2
+relative_position -> position_in_sentence -> word_sentence_frequency -> position_in_sentence;2;2
+token_rank -> position_in_sentence -> position_in_sentence -> relative_position;2;2
+word_burstiness -> relative_position -> token_rank;2;2
+word_sentence_frequency -> position_in_sentence;2;2
+position_in_sentence -> position_in_sentence -> word_burstiness -> token_rank;2;2
+word_burstiness -> word_sentence_frequency -> token_rank;2;2
+position_in_sentence -> word_burstiness -> token_rank -> token_rank;2;2
+position_in_sentence -> pos_id -> position_in_sentence -> position_in_sentence;2;2
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> word_sentence_frequency;2;2
+position_in_sentence -> position_in_sentence -> token_length;2;2
+word_sentence_frequency -> relative_position -> position_in_sentence;2;2
+token_rank -> token_rank -> position_in_sentence -> position_in_sentence;2;2
+token_rank -> token_relative_frequency -> relative_position -> position_in_sentence;2;2
+position_in_sentence -> word_sentence_frequency -> relative_position -> token_length;2;1
+position_in_sentence -> word_sentence_frequency -> word_sentence_frequency -> dep_id;2;1
+relative_position -> next_pos_id -> position_in_sentence -> position_in_sentence;2;1
+token_rank -> position_in_sentence -> token_rank -> position_in_sentence;2;1
+relative_position -> word_sentence_frequency -> relative_position -> position_in_sentence;2;1
+position_in_sentence -> token_rank -> position_in_sentence -> relative_position;2;1
+position_in_sentence -> position_in_sentence -> word_burstiness -> pos_id;2;1
+prev_pos_id -> is_subword -> position_in_sentence -> position_in_sentence;2;1
+token_relative_frequency -> token_rank -> position_in_sentence -> position_in_sentence;2;1
+word_sentence_frequency -> relative_position -> position_in_sentence -> position_in_sentence;2;1
+token_length -> position_in_sentence -> relative_position -> word_sentence_frequency;2;1
+token_rank -> token_rank -> relative_position -> relative_position;1;1
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> word_burstiness;1;1
+position_in_sentence -> word_sentence_frequency -> dep_id -> word_sentence_frequency;1;1
+next_pos_id -> token_relative_frequency -> position_in_sentence -> position_in_sentence;1;1
+next_pos_id -> token_relative_frequency -> position_in_sentence -> relative_position;1;1
+next_pos_id -> token_relative_frequency -> position_in_sentence -> token_relative_frequency;1;1
+next_pos_id -> position_in_sentence -> position_in_sentence -> position_in_sentence;1;1
+next_pos_id -> position_in_sentence -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> token_relative_frequency -> position_in_sentence -> position_in_sentence;1;1
+prev_pos_id -> relative_position -> token_length -> word_sentence_frequency;1;1
+relative_position -> word_burstiness -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> pos_id -> token_rank;1;1
+position_in_sentence -> pos_id -> token_rank -> token_rank;1;1
+position_in_sentence -> pos_id -> relative_position -> token_rank;1;1
+position_in_sentence -> pos_id -> relative_position;1;1
+word_sentence_frequency -> token_length -> position_in_sentence;1;1
+word_sentence_frequency -> position_in_sentence -> relative_position -> relative_position;1;1
+word_burstiness -> position_in_sentence -> relative_position -> token_rank;1;1
+position_in_sentence -> is_punctuation -> word_burstiness -> position_in_sentence;1;1
+token_relative_frequency -> token_rank -> token_relative_frequency -> relative_position;1;1
+token_relative_frequency -> token_rank -> word_burstiness -> dep_id;1;1
+token_relative_frequency -> pos_id -> word_sentence_frequency -> position_in_sentence;1;1
+is_punctuation -> token_rank -> pos_id;1;1
+word_burstiness -> position_in_sentence -> word_sentence_frequency -> token_length;1;1
+word_burstiness -> position_in_sentence -> word_sentence_frequency;1;1
+word_burstiness -> word_sentence_frequency -> position_in_sentence -> word_sentence_frequency;1;1
+prev_pos_id -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;1;1
+word_burstiness -> word_burstiness -> word_burstiness -> relative_position;1;1
+token_relative_frequency -> token_rank -> word_sentence_frequency -> pos_id;1;1
+token_relative_frequency -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> word_burstiness -> token_rank -> relative_position;1;1
+position_in_sentence -> token_relative_frequency -> token_rank -> word_sentence_frequency;1;1
+position_in_sentence -> position_in_sentence -> token_relative_frequency -> token_relative_frequency;1;1
+prev_pos_id -> relative_position -> word_sentence_frequency -> token_length;1;1
+prev_pos_id -> relative_position -> position_in_sentence -> is_subword;1;1
+prev_pos_id -> word_sentence_frequency -> token_rank -> position_in_sentence;1;1
+prev_pos_id -> word_sentence_frequency -> pos_id -> relative_position;1;1
+prev_pos_id -> word_sentence_frequency -> pos_id;1;1
+relative_position -> position_in_sentence -> position_in_sentence -> token_rank;1;1
+word_burstiness -> token_relative_frequency -> word_burstiness -> position_in_sentence;1;1
+word_burstiness -> token_relative_frequency -> position_in_sentence -> position_in_sentence;1;1
+is_stopword -> relative_position -> position_in_sentence -> position_in_sentence;1;1
+is_stopword -> position_in_sentence -> relative_position -> token_length;1;1
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> token_rank;1;1
+position_in_sentence -> dep_id -> word_sentence_frequency -> position_in_sentence;1;1
+relative_position -> word_burstiness -> word_sentence_frequency -> relative_position;1;1
+position_in_sentence -> word_burstiness -> position_in_sentence -> word_sentence_frequency;1;1
+relative_position -> position_in_sentence -> pos_id -> word_sentence_frequency;1;1
+position_in_sentence -> token_rank -> word_burstiness -> pos_id;1;1
+relative_position -> word_burstiness -> word_burstiness -> position_in_sentence;1;1
+relative_position -> word_burstiness -> token_rank -> word_sentence_frequency;1;1
+token_relative_frequency -> token_rank -> token_rank -> position_in_sentence;1;1
+token_relative_frequency -> word_burstiness -> position_in_sentence -> position_in_sentence;1;1
+token_relative_frequency -> word_burstiness -> word_burstiness;1;1
+token_rank -> position_in_sentence -> relative_position -> word_sentence_frequency;1;1
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> pos_id;1;1
+word_burstiness -> token_rank -> position_in_sentence -> relative_position;1;1
+relative_position -> token_rank -> token_rank;1;1
+position_in_sentence -> token_relative_frequency -> position_in_sentence -> token_rank;1;1
+pos_id -> word_sentence_frequency;1;1
+position_in_sentence -> token_rank -> word_sentence_frequency -> relative_position;1;1
+position_in_sentence -> token_rank -> relative_position -> relative_position;1;1
+position_in_sentence -> token_rank -> relative_position;1;1
+token_relative_frequency -> position_in_sentence -> pos_id -> token_rank;1;1
+token_relative_frequency -> position_in_sentence -> position_in_sentence -> relative_position;1;1
+token_relative_frequency -> position_in_sentence -> depth_in_tree -> token_relative_frequency;1;1
+token_relative_frequency -> position_in_sentence -> depth_in_tree -> word_sentence_frequency;1;1
+relative_position -> position_in_sentence -> position_in_sentence -> word_sentence_frequency;1;1
+relative_position -> word_sentence_frequency -> position_in_sentence -> relative_position;1;1
+token_relative_frequency -> relative_position -> relative_position;1;1
+token_relative_frequency -> position_in_sentence -> word_sentence_frequency;1;1
+relative_position -> token_rank -> token_rank -> position_in_sentence;1;1
+relative_position -> token_rank -> position_in_sentence -> relative_position;1;1
+word_sentence_frequency -> word_sentence_frequency -> position_in_sentence;1;1
+word_sentence_frequency -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;1;1
+token_rank -> position_in_sentence -> token_length -> word_sentence_frequency;1;1
+position_in_sentence -> word_sentence_frequency -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> word_sentence_frequency -> token_rank -> relative_position;1;1
+position_in_sentence -> relative_position -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> relative_position -> word_sentence_frequency -> relative_position;1;1
+position_in_sentence -> relative_position -> word_sentence_frequency -> pos_id;1;1
+relative_position -> position_in_sentence -> relative_position -> position_in_sentence;1;1
+position_in_sentence -> position_in_sentence -> is_punctuation -> relative_position;1;1
+position_in_sentence -> position_in_sentence -> dep_id -> word_sentence_frequency;1;1
+position_in_sentence -> position_in_sentence -> dep_id;1;1
+position_in_sentence -> word_burstiness -> token_rank -> word_sentence_frequency;1;1
+position_in_sentence -> token_rank -> word_sentence_frequency -> position_in_sentence;1;1
+position_in_sentence -> prev_pos_id -> position_in_sentence -> position_in_sentence;1;1
+token_relative_frequency -> token_rank -> token_rank -> word_burstiness;1;1
+token_relative_frequency -> is_pronoun -> token_length -> word_sentence_frequency;1;1
+word_burstiness -> token_rank -> position_in_sentence;1;1
+word_burstiness -> token_rank -> position_in_sentence -> is_subword;1;1
+position_in_sentence -> position_in_sentence -> dep_id -> position_in_sentence;1;1
+position_in_sentence -> relative_position -> token_rank -> is_subword;1;1
+position_in_sentence -> relative_position -> token_rank -> token_length;1;1
+word_sentence_frequency -> word_sentence_frequency -> position_in_sentence -> relative_position;1;1
+word_sentence_frequency -> word_burstiness -> position_in_sentence -> position_in_sentence;1;1
+position_in_sentence -> is_punctuation -> relative_position -> position_in_sentence;1;1
+position_in_sentence -> is_punctuation -> position_in_sentence;1;1
+position_in_sentence -> relative_position -> pos_id -> token_relative_frequency;1;1
+position_in_sentence -> token_relative_frequency -> position_in_sentence -> relative_position;1;1
+position_in_sentence -> token_rank -> relative_position -> token_length;1;1
+position_in_sentence -> token_rank -> token_rank -> word_burstiness;1;1
+position_in_sentence -> position_in_sentence -> is_stopword -> position_in_sentence;1;1
+position_in_sentence -> is_stopword -> position_in_sentence -> position_in_sentence;1;1
+token_rank -> position_in_sentence -> is_pronoun -> token_length;1;1
+position_in_sentence -> token_rank -> token_rank -> token_length;1;1
+token_rank -> position_in_sentence -> is_pronoun -> token_rank;1;1
+token_rank -> position_in_sentence -> is_pronoun -> word_sentence_frequency;1;1
+position_in_sentence -> relative_position -> word_burstiness -> position_in_sentence;1;1
+position_in_sentence -> relative_position -> word_burstiness -> word_burstiness;1;1
+position_in_sentence -> token_rank -> token_rank;1;1
+word_sentence_frequency -> is_pronoun -> prev_pos_id -> token_rank;1;1
+is_punctuation -> token_relative_frequency -> position_in_sentence -> relative_position;1;1
+is_punctuation -> word_burstiness -> position_in_sentence -> position_in_sentence;1;1
+is_punctuation -> word_burstiness -> position_in_sentence;1;1
+position_in_sentence -> is_punctuation -> word_burstiness -> word_burstiness;1;1
+dep_id -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;1;1
+token_relative_frequency -> position_in_sentence -> token_rank -> word_sentence_frequency;1;1
+token_relative_frequency -> position_in_sentence -> position_in_sentence -> word_sentence_frequency;1;1
+token_relative_frequency -> token_length -> token_rank -> token_rank;1;1
+num_dependents -> word_burstiness -> token_length -> token_rank;1;1
+num_dependents -> word_sentence_frequency -> pos_id -> word_burstiness;1;1
+position_in_sentence -> word_burstiness -> relative_position -> word_sentence_frequency;1;1
+position_in_sentence -> word_burstiness -> dep_id;1;1
+position_in_sentence -> word_burstiness -> dep_id -> token_relative_frequency;1;1
+position_in_sentence -> position_in_sentence -> word_sentence_frequency -> prev_pos_id;1;1
+position_in_sentence -> relative_position -> relative_position -> word_sentence_frequency;1;1
+position_in_sentence -> relative_position -> relative_position;1;1
+token_rank -> prev_pos_id -> position_in_sentence -> relative_position;1;1
+token_rank -> token_rank -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> position_in_sentence -> next_pos_id;1;1
+position_in_sentence -> position_in_sentence -> next_pos_id -> word_sentence_frequency;1;1
+relative_position -> word_burstiness -> position_in_sentence -> position_in_sentence;1;1
+relative_position -> position_in_sentence -> position_in_sentence -> word_burstiness;1;1
+relative_position -> word_sentence_frequency -> relative_position -> relative_position;1;1
+word_sentence_frequency -> position_in_sentence -> position_in_sentence -> token_relative_frequency;1;1
+relative_position -> token_rank -> word_sentence_frequency -> word_sentence_frequency;1;1
+relative_position -> token_length -> token_rank -> token_relative_frequency;1;1
+position_in_sentence -> position_in_sentence -> position_in_sentence -> next_pos_id;1;1
+position_in_sentence -> word_sentence_frequency -> position_in_sentence -> relative_position;1;1
+position_in_sentence -> is_punctuation -> word_sentence_frequency -> word_burstiness;1;1
+position_in_sentence -> token_rank -> pos_id -> word_sentence_frequency;1;1
+word_sentence_frequency -> token_rank -> pos_id -> token_rank;1;1
+position_in_sentence -> word_burstiness -> word_burstiness -> word_sentence_frequency;1;1
+word_sentence_frequency -> position_in_sentence -> token_relative_frequency;1;1
+word_sentence_frequency -> position_in_sentence -> token_relative_frequency -> token_relative_frequency;1;1
+position_in_sentence -> position_in_sentence -> word_burstiness -> is_stopword;1;1
+position_in_sentence -> relative_position -> token_rank -> word_sentence_frequency;1;1
+token_rank -> word_sentence_frequency -> position_in_sentence -> relative_position;1;1
+word_burstiness -> position_in_sentence -> word_sentence_frequency -> position_in_sentence;1;1
+relative_position -> position_in_sentence -> pos_id -> word_burstiness;1;1
+relative_position -> position_in_sentence -> pos_id;1;1
+next_pos_id -> relative_position -> relative_position -> position_in_sentence;1;1
+next_pos_id -> relative_position -> relative_position;1;1
+next_pos_id -> relative_position -> position_in_sentence -> position_in_sentence;1;1
+next_pos_id -> position_in_sentence -> token_rank;1;1
+word_sentence_frequency -> position_in_sentence -> dep_id -> word_sentence_frequency;1;1
+position_in_sentence -> word_burstiness -> word_sentence_frequency -> position_in_sentence;1;1
+token_relative_frequency -> position_in_sentence -> position_in_sentence -> pos_id;1;1
+position_in_sentence -> token_length -> word_burstiness -> relative_position;1;1
+position_in_sentence -> token_length -> token_rank -> num_subtokens;1;1
+position_in_sentence -> token_length -> token_rank -> position_in_sentence;1;1
+position_in_sentence -> relative_position -> word_burstiness -> relative_position;1;1
+position_in_sentence -> relative_position -> word_burstiness;1;1
+is_punctuation -> token_rank -> token_rank -> position_in_sentence;1;1
+is_punctuation -> token_rank -> position_in_sentence -> relative_position;1;1
+position_in_sentence -> position_in_sentence -> is_pronoun -> position_in_sentence;1;1
+position_in_sentence -> token_rank -> word_sentence_frequency -> token_length;1;1
+word_burstiness -> word_burstiness -> word_burstiness -> pos_id;1;1
+position_in_sentence -> token_rank -> token_relative_frequency -> token_relative_frequency;1;1
+position_in_sentence -> token_rank -> word_burstiness -> word_sentence_frequency;1;1
+position_in_sentence -> token_rank -> word_burstiness;1;1
+word_sentence_frequency -> position_in_sentence -> relative_position -> token_length;1;1
+position_in_sentence -> relative_position -> position_in_sentence -> prev_pos_id;1;1
+position_in_sentence -> relative_position -> position_in_sentence -> pos_id;1;1
+relative_position -> next_pos_id -> position_in_sentence -> relative_position;1;1
+position_in_sentence -> word_burstiness -> word_sentence_frequency -> token_length;1;1
+position_in_sentence -> word_burstiness -> is_pronoun -> token_rank;1;1
+prev_pos_id -> position_in_sentence -> position_in_sentence -> pos_id;1;1
+token_rank -> relative_position -> position_in_sentence;1;1
+token_rank -> position_in_sentence -> position_in_sentence;1;1
+word_burstiness -> word_burstiness -> position_in_sentence -> position_in_sentence;1;1
+word_burstiness -> word_burstiness -> pos_id -> position_in_sentence;1;1
+position_in_sentence -> position_in_sentence -> is_pronoun -> depth_in_tree;1;1
+position_in_sentence -> position_in_sentence -> token_length -> word_sentence_frequency;1;1
+position_in_sentence -> position_in_sentence -> token_relative_frequency -> position_in_sentence;1;1
+position_in_sentence -> word_burstiness -> relative_position -> position_in_sentence;1;1
+position_in_sentence -> word_sentence_frequency -> relative_position -> word_burstiness;1;1
+position_in_sentence -> word_sentence_frequency -> token_rank -> position_in_sentence;1;1
+word_sentence_frequency -> relative_position -> position_in_sentence -> relative_position;1;1
+position_in_sentence -> depth_in_tree -> position_in_sentence -> position_in_sentence;1;1
+relative_position -> position_in_sentence -> position_in_sentence -> pos_id;1;1
+position_in_sentence -> position_in_sentence -> token_length -> token_rank;1;1
+position_in_sentence -> is_pronoun -> token_length -> word_burstiness;1;1
+position_in_sentence -> relative_position -> pos_id -> word_sentence_frequency;1;1
+position_in_sentence -> word_burstiness -> token_rank -> position_in_sentence;1;1
+position_in_sentence -> pos_id -> word_sentence_frequency;1;1
+position_in_sentence -> position_in_sentence -> word_burstiness -> word_burstiness;1;1
+position_in_sentence -> token_rank -> relative_position -> position_in_sentence;1;1
+position_in_sentence -> token_rank -> token_rank -> is_pronoun;1;1
+token_rank -> token_rank -> position_in_sentence;1;1
+word_burstiness -> position_in_sentence -> position_in_sentence -> token_rank;1;1
+word_burstiness -> position_in_sentence -> token_rank -> position_in_sentence;1;1
+word_burstiness -> token_rank -> pos_id -> position_in_sentence;1;1
+position_in_sentence -> word_sentence_frequency -> word_sentence_frequency -> position_in_sentence;1;1
+position_in_sentence -> position_in_sentence -> token_relative_frequency -> relative_position;1;1
+relative_position -> relative_position -> pos_id -> position_in_sentence;1;1
+word_burstiness -> position_in_sentence -> token_rank;1;1
+word_burstiness -> position_in_sentence -> token_rank -> depth_in_tree;1;1
+position_in_sentence -> token_relative_frequency -> position_in_sentence -> pos_id;1;1
+position_in_sentence -> is_special_token -> position_in_sentence -> position_in_sentence;1;1
+next_pos_id -> position_in_sentence -> token_relative_frequency;1;1
+next_pos_id -> position_in_sentence -> relative_position -> relative_position;1;1
+next_pos_id -> position_in_sentence -> position_in_sentence;1;1
+position_in_sentence -> position_in_sentence -> position_in_sentence -> dep_id;1;1
+word_burstiness -> relative_position -> token_rank -> position_in_sentence;1;1
+word_burstiness -> relative_position -> word_sentence_frequency -> position_in_sentence;1;1
+word_burstiness -> relative_position -> word_sentence_frequency -> token_relative_frequency;1;1
+token_rank -> token_relative_frequency -> position_in_sentence;1;1
+token_rank -> token_relative_frequency -> position_in_sentence -> relative_position;1;1
+token_rank -> token_rank -> token_rank -> token_rank;1;1
+position_in_sentence -> relative_position -> is_pronoun -> word_sentence_frequency;1;1
+pos_id -> word_burstiness -> word_burstiness -> position_in_sentence;1;1
+pos_id -> word_burstiness -> word_sentence_frequency -> position_in_sentence;1;1
+token_rank -> is_stopword -> position_in_sentence -> position_in_sentence;1;1
+token_rank -> position_in_sentence -> relative_position -> position_in_sentence;1;1
+word_sentence_frequency -> pos_id -> position_in_sentence;1;1
+word_sentence_frequency -> pos_id -> position_in_sentence -> position_in_sentence;1;1
+position_in_sentence -> position_in_sentence -> token_relative_frequency -> word_sentence_frequency;1;1
+position_in_sentence -> next_pos_id -> position_in_sentence -> position_in_sentence;1;1
+position_in_sentence -> word_sentence_frequency -> is_pronoun -> word_sentence_frequency;1;1
+position_in_sentence -> word_sentence_frequency -> token_length;1;1
+word_sentence_frequency -> pos_id -> word_sentence_frequency -> prev_pos_id;1;1
+word_sentence_frequency -> pos_id -> position_in_sentence -> pos_id;1;1
+prev_pos_id -> token_rank -> position_in_sentence;1;1
+relative_position -> token_relative_frequency -> token_rank -> token_rank;1;1
+token_rank -> token_rank -> relative_position -> position_in_sentence;1;1
+word_burstiness -> word_sentence_frequency -> position_in_sentence -> relative_position;1;1
+position_in_sentence -> position_in_sentence -> relative_position -> is_pronoun;1;1
+position_in_sentence -> token_relative_frequency -> word_sentence_frequency;1;1
+position_in_sentence -> token_relative_frequency -> word_sentence_frequency -> token_rank;1;1
+position_in_sentence -> token_relative_frequency -> is_pronoun;1;1
+position_in_sentence -> token_relative_frequency -> is_pronoun -> word_sentence_frequency;1;1
+position_in_sentence -> word_sentence_frequency -> is_stopword -> position_in_sentence;1;1
+token_length -> word_burstiness -> word_sentence_frequency -> token_rank;1;1
+token_length -> word_burstiness -> pos_id -> position_in_sentence;1;1
+relative_position -> position_in_sentence -> dep_id -> relative_position;1;1
+relative_position -> token_relative_frequency -> position_in_sentence -> position_in_sentence;1;1
+position_in_sentence -> position_in_sentence -> word_sentence_frequency -> dep_id;1;1
+token_length -> word_sentence_frequency -> position_in_sentence -> position_in_sentence;1;1
+position_in_sentence -> relative_position -> token_rank -> token_rank;1;1
+position_in_sentence -> relative_position -> position_in_sentence -> next_pos_id;1;1
+position_in_sentence -> position_in_sentence -> pos_id -> pos_id;1;1
+position_in_sentence -> token_rank -> position_in_sentence -> token_relative_frequency;1;1
