@@ -1,0 +1,13 @@
+=== Feature Comparison Log ===
+Timestamp: 2026-11-09T08:46:04.950179
+
+Total features analyzed: 21
+dep_id, depth_in_tree, ent_id, is_numeric, is_pronoun, is_punctuation, is_special_token, is_stopword, is_subword, next_pos_id, num_dependents, num_subtokens, pos_id, position_in_sentence, prev_pos_id, relative_position, token_length, token_rank, token_relative_frequency, word_burstiness, word_sentence_frequency
+
+=== Pretrained BERT: Features NEVER selected ===
+Total Missing Features: 5
+ent_id, is_numeric, is_punctuation, is_special_token, is_subword
+
+=== Untrained BERT: Features NEVER selected ===
+Total Missing Features: 1
+is_numeric

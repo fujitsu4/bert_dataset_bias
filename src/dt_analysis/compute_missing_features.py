@@ -30,6 +30,7 @@ Usage:
 import argparse
 import pandas as pd
 from datetime import datetime
+import os
 
 
 ID_COLUMNS = {
@@ -60,20 +61,42 @@ def extract_used_features(dt_csv):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--attention_csv", required=True)
-    parser.add_argument("--pretrained_csv", required=True)
-    parser.add_argument("--untrained_csv", required=True)
-    parser.add_argument("--log_file", required=True)
+    parser.add_argument(
+    "--dataset",
+    type=str,
+    required=True,
+    choices=["snli", "mnli", "agnews", "arxiv"],
+    help="Dataset being processed"
+)
     args = parser.parse_args()
 
-    all_features = extract_all_features(args.attention_csv)
-    pretrained_used = extract_used_features(args.pretrained_csv)
-    untrained_used = extract_used_features(args.untrained_csv)
+    dataset = args.dataset
+
+    attention_csv = (
+        f"outputs/attention/attention_top5_{dataset}_pretrained.csv"
+    )
+
+    pretrained_csv = (
+        f"outputs/dt_analysis/{dataset}/features_by_depth_{dataset}_pretrained.csv"
+    )
+
+    untrained_csv = (
+        f"outputs/dt_analysis/{dataset}/features_by_depth_{dataset}_untrained.csv"
+    )
+
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
+
+    log_file = f"{log_dir}/missing_features_comparison_{dataset}.txt"
+
+    all_features = extract_all_features(attention_csv)
+    pretrained_used = extract_used_features(pretrained_csv)
+    untrained_used = extract_used_features(untrained_csv)
 
     pretrained_missing = sorted(set(all_features) - pretrained_used)
     untrained_missing = sorted(set(all_features) - untrained_used)
 
-    with open(args.log_file, "w", encoding="utf8") as f:
+    with open(log_file, "w", encoding="utf8") as f:
         f.write(f"=== Feature Comparison Log ===\n")
         f.write(f"Timestamp: {datetime.now().isoformat()}\n\n")
 
@@ -88,7 +111,7 @@ def main():
         f.write(f"Total Missing Features: {len(untrained_missing)}\n")
         f.write(", ".join(untrained_missing) + "\n")
 
-    print(f"[OK] Comparison log written to {args.log_file}")
+    print(f"[OK] Dataset: {dataset} | Comparison log written to {log_file}")
 
 
 if __name__ == "__main__":
