@@ -2,7 +2,7 @@
 analyze_patterns.py
 Author : Zakaria JOUILIL
 
-Description: Rename and merge features_patterns for each dataset
+Description: Analyze features_patterns for each dataset
 """
 
 import argparse
