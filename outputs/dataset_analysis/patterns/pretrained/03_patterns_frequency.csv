@@ -1,0 +1,98 @@
+dataset;pattern;occurrences;layers;dataset_total_occurrences;relative_frequency
+agnews;next_pos_id -> num_subtokens -> token_rank;2;[5, 11];35;0.05714285714285714
+agnews;next_pos_id -> token_rank -> is_punctuation -> word_burstiness;2;[3, 4];35;0.05714285714285714
+agnews;next_pos_id -> token_rank -> num_subtokens;2;[3, 4];35;0.05714285714285714
+agnews;relative_position;2;[7, 8];35;0.05714285714285714
+agnews;relative_position -> word_sentence_frequency -> relative_position;2;[10, 12];35;0.05714285714285714
+agnews;next_pos_id -> num_subtokens -> relative_position -> pos_id;1;[5];35;0.02857142857142857
+agnews;next_pos_id -> num_subtokens -> relative_position -> position_in_sentence;1;[11];35;0.02857142857142857
+agnews;next_pos_id -> num_subtokens -> token_rank -> word_burstiness;1;[11];35;0.02857142857142857
+agnews;next_pos_id -> relative_position;1;[9];35;0.02857142857142857
+agnews;next_pos_id -> relative_position -> word_sentence_frequency;1;[9];35;0.02857142857142857
+agnews;next_pos_id -> relative_position -> word_sentence_frequency -> dep_id;1;[9];35;0.02857142857142857
+agnews;next_pos_id -> token_rank -> num_subtokens -> relative_position;1;[4];35;0.02857142857142857
+agnews;next_pos_id -> token_rank -> num_subtokens -> token_relative_frequency;1;[3];35;0.02857142857142857
+agnews;next_pos_id -> token_rank -> word_burstiness;1;[3];35;0.02857142857142857
+agnews;next_pos_id -> word_burstiness -> depth_in_tree -> next_pos_id;1;[5];35;0.02857142857142857
+agnews;next_pos_id -> word_burstiness -> depth_in_tree -> word_sentence_frequency;1;[5];35;0.02857142857142857
+agnews;next_pos_id -> word_burstiness -> relative_position -> position_in_sentence;1;[11];35;0.02857142857142857
+agnews;next_pos_id -> word_burstiness -> word_sentence_frequency -> token_relative_frequency;1;[4];35;0.02857142857142857
+agnews;relative_position -> is_punctuation -> position_in_sentence -> depth_in_tree;1;[8];35;0.02857142857142857
+agnews;relative_position -> token_rank;1;[10];35;0.02857142857142857
+agnews;relative_position -> token_rank -> num_subtokens;1;[12];35;0.02857142857142857
+agnews;relative_position -> token_rank -> position_in_sentence -> depth_in_tree;1;[10];35;0.02857142857142857
+agnews;relative_position -> word_sentence_frequency -> token_rank -> token_rank;1;[12];35;0.02857142857142857
+agnews;token_rank -> token_relative_frequency -> relative_position -> num_subtokens;1;[2];35;0.02857142857142857
+agnews;token_rank -> token_relative_frequency -> relative_position -> token_relative_frequency;1;[2];35;0.02857142857142857
+agnews;token_rank -> token_relative_frequency -> word_burstiness -> position_in_sentence;1;[2];35;0.02857142857142857
+agnews;word_burstiness;1;[6];35;0.02857142857142857
+agnews;word_burstiness -> position_in_sentence;1;[1];35;0.02857142857142857
+agnews;word_burstiness -> position_in_sentence -> position_in_sentence -> position_in_sentence;1;[1];35;0.02857142857142857
+agnews;word_burstiness -> word_burstiness -> next_pos_id -> pos_id;1;[6];35;0.02857142857142857
+arxiv;next_pos_id -> token_rank;3;[2, 3, 4];29;0.10344827586206896
+arxiv;relative_position;3;[6, 7, 8];29;0.10344827586206896
+arxiv;relative_position -> token_rank;2;[10, 12];29;0.06896551724137931
+arxiv;next_pos_id -> num_subtokens;1;[5];29;0.034482758620689655
+arxiv;next_pos_id -> num_subtokens -> token_rank;1;[5];29;0.034482758620689655
+arxiv;next_pos_id -> relative_position -> num_subtokens;1;[11];29;0.034482758620689655
+arxiv;next_pos_id -> relative_position -> prev_pos_id;1;[9];29;0.034482758620689655
+arxiv;next_pos_id -> relative_position -> prev_pos_id -> word_sentence_frequency;1;[9];29;0.034482758620689655
+arxiv;next_pos_id -> relative_position -> token_rank;1;[11];29;0.034482758620689655
+arxiv;next_pos_id -> relative_position -> token_rank -> position_in_sentence;1;[11];29;0.034482758620689655
+arxiv;next_pos_id -> relative_position -> word_burstiness -> token_relative_frequency;1;[9];29;0.034482758620689655
+arxiv;next_pos_id -> token_length -> word_burstiness -> word_sentence_frequency;1;[11];29;0.034482758620689655
+arxiv;next_pos_id -> token_rank -> is_punctuation;1;[4];29;0.034482758620689655
+arxiv;next_pos_id -> token_rank -> word_sentence_frequency -> word_burstiness;1;[3];29;0.034482758620689655
+arxiv;next_pos_id -> word_sentence_frequency -> pos_id -> position_in_sentence;1;[3];29;0.034482758620689655
+arxiv;next_pos_id -> word_sentence_frequency -> word_burstiness -> relative_position;1;[4];29;0.034482758620689655
+arxiv;relative_position -> depth_in_tree -> is_stopword -> pos_id;1;[8];29;0.034482758620689655
+arxiv;relative_position -> depth_in_tree -> word_sentence_frequency -> depth_in_tree;1;[8];29;0.034482758620689655
+arxiv;relative_position -> is_pronoun -> token_length -> word_sentence_frequency;1;[10];29;0.034482758620689655
+arxiv;relative_position -> is_pronoun -> word_sentence_frequency -> next_pos_id;1;[10];29;0.034482758620689655
+arxiv;relative_position -> token_rank -> position_in_sentence;1;[10];29;0.034482758620689655
+arxiv;relative_position -> word_sentence_frequency -> next_pos_id;1;[12];29;0.034482758620689655
+arxiv;word_burstiness -> position_in_sentence;1;[1];29;0.034482758620689655
+arxiv;word_burstiness -> position_in_sentence -> position_in_sentence;1;[1];29;0.034482758620689655
+snli;next_pos_id -> token_rank;2;[3, 4];45;0.044444444444444446
+snli;next_pos_id -> word_sentence_frequency -> pos_id -> prev_pos_id;2;[4];45;0.044444444444444446
+snli;next_pos_id -> depth_in_tree -> pos_id -> position_in_sentence;1;[9];45;0.022222222222222223
+snli;next_pos_id -> depth_in_tree -> pos_id -> prev_pos_id;1;[9];45;0.022222222222222223
+snli;next_pos_id -> depth_in_tree -> position_in_sentence -> pos_id;1;[9];45;0.022222222222222223
+snli;next_pos_id -> num_subtokens;1;[5];45;0.022222222222222223
+snli;next_pos_id -> num_subtokens -> relative_position -> token_relative_frequency;1;[5];45;0.022222222222222223
+snli;next_pos_id -> pos_id -> position_in_sentence -> word_sentence_frequency;1;[3];45;0.022222222222222223
+snli;next_pos_id -> pos_id -> token_rank;1;[3];45;0.022222222222222223
+snli;next_pos_id -> position_in_sentence -> depth_in_tree -> pos_id;1;[11];45;0.022222222222222223
+snli;next_pos_id -> position_in_sentence -> word_sentence_frequency;1;[11];45;0.022222222222222223
+snli;next_pos_id -> position_in_sentence -> word_sentence_frequency -> word_sentence_frequency;1;[11];45;0.022222222222222223
+snli;next_pos_id -> relative_position -> num_subtokens;1;[11];45;0.022222222222222223
+snli;next_pos_id -> relative_position -> token_rank;1;[11];45;0.022222222222222223
+snli;next_pos_id -> relative_position -> token_rank -> is_pronoun;1;[11];45;0.022222222222222223
+snli;next_pos_id -> token_rank -> num_subtokens -> prev_pos_id;1;[3];45;0.022222222222222223
+snli;next_pos_id -> token_rank -> token_relative_frequency -> relative_position;1;[4];45;0.022222222222222223
+snli;next_pos_id -> token_relative_frequency -> num_subtokens;1;[9];45;0.022222222222222223
+snli;next_pos_id -> token_relative_frequency -> num_subtokens -> relative_position;1;[9];45;0.022222222222222223
+snli;next_pos_id -> token_relative_frequency -> relative_position;1;[9];45;0.022222222222222223
+snli;next_pos_id -> word_sentence_frequency -> word_burstiness -> next_pos_id;1;[4];45;0.022222222222222223
+snli;relative_position;1;[7];45;0.022222222222222223
+snli;relative_position -> depth_in_tree -> dep_id -> position_in_sentence;1;[8];45;0.022222222222222223
+snli;relative_position -> depth_in_tree -> pos_id -> depth_in_tree;1;[8];45;0.022222222222222223
+snli;relative_position -> depth_in_tree -> pos_id -> word_sentence_frequency;1;[8];45;0.022222222222222223
+snli;relative_position -> next_pos_id;1;[10];45;0.022222222222222223
+snli;relative_position -> next_pos_id -> depth_in_tree;1;[8];45;0.022222222222222223
+snli;relative_position -> next_pos_id -> depth_in_tree -> position_in_sentence;1;[8];45;0.022222222222222223
+snli;relative_position -> num_dependents -> is_stopword -> num_subtokens;1;[7];45;0.022222222222222223
+snli;relative_position -> pos_id -> pos_id -> position_in_sentence;1;[6];45;0.022222222222222223
+snli;relative_position -> prev_pos_id;1;[6];45;0.022222222222222223
+snli;relative_position -> prev_pos_id -> next_pos_id;1;[6];45;0.022222222222222223
+snli;relative_position -> prev_pos_id -> next_pos_id -> token_length;1;[6];45;0.022222222222222223
+snli;relative_position -> token_rank;1;[12];45;0.022222222222222223
+snli;relative_position -> token_rank -> position_in_sentence -> token_relative_frequency;1;[12];45;0.022222222222222223
+snli;relative_position -> word_burstiness -> depth_in_tree -> pos_id;1;[12];45;0.022222222222222223
+snli;relative_position -> word_burstiness -> token_rank -> depth_in_tree;1;[12];45;0.022222222222222223
+snli;relative_position -> word_burstiness -> word_sentence_frequency -> is_stopword;1;[10];45;0.022222222222222223
+snli;token_rank -> is_stopword -> word_burstiness -> num_dependents;1;[2];45;0.022222222222222223
+snli;token_rank -> is_stopword -> word_burstiness -> relative_position;1;[2];45;0.022222222222222223
+snli;token_rank -> next_pos_id;1;[2];45;0.022222222222222223
+snli;token_rank -> next_pos_id -> relative_position -> position_in_sentence;1;[2];45;0.022222222222222223
+snli;word_burstiness;1;[1];45;0.022222222222222223

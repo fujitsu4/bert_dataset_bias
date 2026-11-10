@@ -1,0 +1,4 @@
+dataset_a;dataset_b;common_patterns;union_patterns;jaccard_similarity
+snli;arxiv;6;61;0.09836065573770492
+snli;agnews;3;70;0.04285714285714286
+arxiv;agnews;4;50;0.08

@@ -1,0 +1,20 @@
+subpath;snli_occurrences;arxiv_occurrences;agnews_occurrences
+depth_in_tree;12;3;4
+next_pos_id;31;18;21
+next_pos_id -> num_subtokens;2;2;5
+next_pos_id -> relative_position;4;6;3
+next_pos_id -> token_rank;4;5;7
+num_subtokens;7;3;11
+pos_id;13;2;2
+position_in_sentence;11;6;9
+relative_position;26;18;20
+relative_position -> num_subtokens;1;1;1
+relative_position -> token_rank;4;5;3
+relative_position -> token_rank -> position_in_sentence;1;2;1
+token_rank;14;11;18
+token_rank -> position_in_sentence;1;2;1
+token_relative_frequency;6;1;6
+word_burstiness;7;6;14
+word_burstiness -> relative_position;1;1;1
+word_burstiness -> word_sentence_frequency;1;1;1
+word_sentence_frequency;9;9;7

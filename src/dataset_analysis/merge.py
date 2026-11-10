@@ -1,5 +1,5 @@
 """
-compute_attention_core.py
+merge.py
 Author : Zakaria JOUILIL
 
 Description: Rename and merge features_patterns for each dataset

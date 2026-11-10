@@ -1,0 +1,12 @@
+dataset;root_feature;occurrences
+agnews;next_pos_id;19
+agnews;relative_position;9
+agnews;word_burstiness;4
+agnews;token_rank;3
+arxiv;next_pos_id;16
+arxiv;relative_position;11
+arxiv;word_burstiness;2
+snli;next_pos_id;23
+snli;relative_position;17
+snli;token_rank;4
+snli;word_burstiness;1

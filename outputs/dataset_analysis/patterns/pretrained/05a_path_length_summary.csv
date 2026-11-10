@@ -1,0 +1,4 @@
+dataset;unique_patterns;total_occurrences;mean_path_length_weighted;min_path_length;max_path_length
+agnews;30;35;3.3142857142857145;1;4
+arxiv;24;29;2.9310344827586206;1;4
+snli;43;45;3.3777777777777778;1;4
