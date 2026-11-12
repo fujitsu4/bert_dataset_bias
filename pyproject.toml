@@ -1,7 +1,7 @@
 [project]
-name = "llm_bias_with_dt"
+name = "bert_dataset_bias"
 version = "0.1.0"
-description = "Exploring Biases in BERT through Attention Scores: A Decision Tree Approach"
+description = "Interpreting Attention Allocation Patterns in Pretrained BERT Through Decision Trees"
 authors = [
     { name="Zakaria JOUILIL", email="zakaria.jouilil@gmail.com" }
 ]
@@ -22,4 +22,4 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fujitsu4/llm_bias_with_dt.git"
+Homepage = "https://github.com/fujitsu4/bert_dataset_bias"
