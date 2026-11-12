@@ -1,0 +1,17 @@
+|--- position_in_sentence <= 7.500000
+|   |--- position_in_sentence <= 5.500000
+|   |   |--- position_in_sentence <= 1.500000
+|   |   |   |--- token_length <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 7.500000
+|   |--- position_in_sentence >  5.500000
+|   |   |--- position_in_sentence <= 6.500000
+|   |   |   |--- word_burstiness <= -0.272673
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  7.500000
+|   |--- position_in_sentence >  17.500000
+|   |   |--- depth_in_tree <= 1.500000
+|   |   |   |--- word_sentence_frequency >  1449.000000
+|   |   |   |   |--- class: 1

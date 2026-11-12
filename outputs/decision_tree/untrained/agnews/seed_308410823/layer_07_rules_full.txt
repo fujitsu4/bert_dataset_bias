@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- word_sentence_frequency <= 6425.500000
+|   |--- token_rank <= 11.500000
+|   |   |--- relative_position <= 0.996296
+|   |   |   |--- token_rank <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  5.500000
+|   |   |   |   |--- class: 0
+|   |   |--- relative_position >  0.996296
+|   |   |   |--- position_in_sentence <= 28.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  28.500000
+|   |   |   |   |--- class: 0
+|   |--- token_rank >  11.500000
+|   |   |--- word_sentence_frequency <= 1865.500000
+|   |   |   |--- position_in_sentence <= 17.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  17.500000
+|   |   |   |   |--- class: 0
+|   |   |--- word_sentence_frequency >  1865.500000
+|   |   |   |--- token_rank <= 16.000000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  16.000000
+|   |   |   |   |--- class: 1
+|--- word_sentence_frequency >  6425.500000
+|   |--- token_rank <= 1.500000
+|   |   |--- position_in_sentence <= 33.500000
+|   |   |   |--- relative_position <= 0.970143
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.970143
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  33.500000
+|   |   |   |--- relative_position <= 0.986206
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.986206
+|   |   |   |   |--- class: 0
+|   |--- token_rank >  1.500000
+|   |   |--- position_in_sentence <= 17.500000
+|   |   |   |--- position_in_sentence <= 16.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  16.500000
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  17.500000
+|   |   |   |--- position_in_sentence <= 24.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  24.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    27 |       482 |   481 | 0.9979
+    15 |      2100 |  1916 | 0.9124
+    20 |       158 |    52 | 0.3291
+     7 |       506 |   163 | 0.3221
+    30 |     16533 |  4115 | 0.2489
+    26 |      3974 |   957 | 0.2408
+    14 |     10369 |  1974 | 0.1904
+    11 |    140618 | 18538 | 0.1318
+     8 |      9494 |   949 | 0.1000
+    12 |    218423 | 17965 | 0.0822
+    29 |      3912 |   232 | 0.0593
+     5 |     39483 |  2162 | 0.0548
+    23 |       227 |     5 | 0.0220
+     4 |     36201 |   469 | 0.0130
+    19 |      1344 |    17 | 0.0126
+    22 |      7632 |     5 | 0.0007

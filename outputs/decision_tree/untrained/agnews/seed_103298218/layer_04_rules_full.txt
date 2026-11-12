@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- word_sentence_frequency <= 3099.500000
+|   |--- position_in_sentence <= 23.500000
+|   |   |--- position_in_sentence <= 22.500000
+|   |   |   |--- position_in_sentence <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  5.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  22.500000
+|   |   |   |--- relative_position <= 0.541251
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.541251
+|   |   |   |   |--- class: 1
+|   |--- position_in_sentence >  23.500000
+|   |   |--- position_in_sentence <= 49.500000
+|   |   |   |--- position_in_sentence <= 48.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  48.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  49.500000
+|   |   |   |--- position_in_sentence <= 62.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  62.500000
+|   |   |   |   |--- class: 0
+|--- word_sentence_frequency >  3099.500000
+|   |--- token_rank <= 7.500000
+|   |   |--- word_burstiness <= -0.293110
+|   |   |   |--- position_in_sentence <= 15.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  15.500000
+|   |   |   |   |--- class: 0
+|   |   |--- word_burstiness >  -0.293110
+|   |   |   |--- word_burstiness <= -0.266965
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_burstiness >  -0.266965
+|   |   |   |   |--- class: 0
+|   |--- token_rank >  7.500000
+|   |   |--- word_sentence_frequency <= 4761.000000
+|   |   |   |--- position_in_sentence <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  5.500000
+|   |   |   |   |--- class: 0
+|   |   |--- word_sentence_frequency >  4761.000000
+|   |   |   |--- position_in_sentence <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  5.500000
+|   |   |   |   |--- class: 1
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    30 |      7334 |  5219 | 0.7116
+     8 |      2632 |  1780 | 0.6763
+     7 |      5283 |  2338 | 0.4426
+    27 |     13093 |  4677 | 0.3572
+    12 |      3488 |  1181 | 0.3386
+    23 |      9695 |  3100 | 0.3198
+    22 |     11770 |  2089 | 0.1775
+    29 |       278 |    43 | 0.1547
+     5 |    145310 | 18507 | 0.1274
+    19 |      6747 |   498 | 0.0738
+    11 |    153686 |  8412 | 0.0547
+    15 |      7016 |   219 | 0.0312
+     4 |     55838 |  1266 | 0.0227
+    14 |     27463 |   300 | 0.0109
+    20 |     41014 |   369 | 0.0090
+    26 |       809 |     2 | 0.0025

@@ -1,0 +1,16 @@
+|--- position_in_sentence <= 3.500000
+|   |--- relative_position >  0.056873
+|   |   |--- word_burstiness >  -0.250489
+|   |   |   |--- relative_position >  0.068574
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  3.500000
+|   |--- position_in_sentence <= 4.500000
+|   |   |--- relative_position <= 0.076197
+|   |   |   |--- token_length >  2.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  3.500000
+|   |--- position_in_sentence <= 4.500000
+|   |   |--- relative_position >  0.076197
+|   |   |   |   |--- class: 1

@@ -1,0 +1,16 @@
+|--- is_punctuation <= 0.500000
+|   |--- position_in_sentence >  12.500000
+|   |   |--- position_in_sentence <= 17.500000
+|   |   |   |--- position_in_sentence >  16.500000
+|   |   |   |   |--- class: 1
+
+|--- is_punctuation >  0.500000
+|   |--- word_burstiness >  -0.266965
+|   |   |--- position_in_sentence <= 8.500000
+|   |   |   |--- position_in_sentence <= 4.500000
+|   |   |   |   |--- class: 1
+
+|--- is_punctuation >  0.500000
+|   |--- word_burstiness >  -0.266965
+|   |   |--- position_in_sentence >  8.500000
+|   |   |   |   |--- class: 1

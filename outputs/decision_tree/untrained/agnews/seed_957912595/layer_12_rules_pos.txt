@@ -1,0 +1,17 @@
+|--- word_burstiness <= -0.412751
+|   |--- word_sentence_frequency >  3079.000000
+|   |   |--- relative_position <= 0.974679
+|   |   |   |--- token_length >  2.500000
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness >  -0.412751
+|   |--- word_sentence_frequency <= 7056.000000
+|   |   |--- token_rank >  274.500000
+|   |   |   |--- token_length <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness >  -0.412751
+|   |--- word_sentence_frequency >  7056.000000
+|   |   |--- position_in_sentence <= 38.500000
+|   |   |   |--- position_in_sentence >  37.500000
+|   |   |   |   |--- class: 1

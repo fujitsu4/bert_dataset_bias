@@ -1,0 +1,5 @@
+|--- prev_pos_id <= -0.500000
+|   |--- relative_position >  0.011050
+|   |   |--- position_in_sentence <= 1.500000
+|   |   |   |--- token_rank <= 47.500000
+|   |   |   |   |--- class: 1

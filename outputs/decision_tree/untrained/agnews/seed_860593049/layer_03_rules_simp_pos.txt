@@ -1,0 +1,16 @@
+|--- token_rank <= 4.500000
+|   |--- position_in_sentence <= 20.500000
+|   |   |--- position_in_sentence >  19.500000
+|   |   |   |--- token_rank >  3.500000
+|   |   |   |   |--- class: 1
+
+|--- token_rank >  4.500000
+|   |--- word_sentence_frequency <= 5213.500000
+|   |   |--- token_rank >  20.500000
+|   |   |   |--- token_rank <= 21.500000
+|   |   |   |   |--- class: 1
+
+|--- token_rank >  4.500000
+|   |--- word_sentence_frequency >  5213.500000
+|   |   |--- token_rank >  7.000000
+|   |   |   |   |--- class: 1

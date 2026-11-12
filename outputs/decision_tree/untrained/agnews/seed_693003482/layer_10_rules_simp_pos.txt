@@ -1,0 +1,4 @@
+|--- is_punctuation >  0.500000
+|   |--- word_burstiness >  -0.358279
+|   |   |--- token_rank <= 3.500000
+|   |   |   |   |--- class: 1

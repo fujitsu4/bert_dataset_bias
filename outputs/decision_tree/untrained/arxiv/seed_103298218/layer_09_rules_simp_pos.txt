@@ -1,0 +1,5 @@
+|--- prev_pos_id <= -0.500000
+|   |--- relative_position >  0.013794
+|   |   |--- token_length <= 2.500000
+|   |   |   |--- word_sentence_frequency >  302.000000
+|   |   |   |   |--- class: 1

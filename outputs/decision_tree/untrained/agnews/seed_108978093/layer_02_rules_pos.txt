@@ -1,0 +1,11 @@
+|--- word_burstiness <= -0.331401
+|   |--- word_burstiness >  -0.353127
+|   |   |--- position_in_sentence <= 24.500000
+|   |   |   |--- position_in_sentence >  21.500000
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness >  -0.331401
+|   |--- position_in_sentence >  55.500000
+|   |   |--- position_in_sentence <= 56.500000
+|   |   |   |--- token_rank <= 3.500000
+|   |   |   |   |--- class: 1

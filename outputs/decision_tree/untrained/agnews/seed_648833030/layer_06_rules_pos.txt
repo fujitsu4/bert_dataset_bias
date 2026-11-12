@@ -1,0 +1,5 @@
+|--- position_in_sentence >  44.500000
+|   |--- token_rank >  24.500000
+|   |   |--- token_rank <= 25.500000
+|   |   |   |--- position_in_sentence <= 47.500000
+|   |   |   |   |--- class: 1

@@ -1,0 +1,21 @@
+|--- relative_position <= 0.996296
+|   |--- position_in_sentence >  24.500000
+|   |   |--- position_in_sentence <= 25.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.996296
+|   |--- position_in_sentence <= 28.500000
+|   |   |--- position_in_sentence <= 27.500000
+|   |   |   |--- position_in_sentence <= 26.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.996296
+|   |--- position_in_sentence <= 28.500000
+|   |   |--- position_in_sentence >  27.500000
+|   |   |   |--- class: 1
+
+|--- relative_position >  0.996296
+|   |--- position_in_sentence >  28.500000
+|   |   |--- position_in_sentence >  47.500000
+|   |   |   |--- position_in_sentence <= 54.500000
+|   |   |   |   |--- class: 1

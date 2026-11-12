@@ -1,0 +1,57 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 1.500000
+|   |--- word_burstiness <= -0.156625
+|   |   |--- token_rank <= 101.500000
+|   |   |   |--- pos_id <= 9.000000
+|   |   |   |   |--- class: 1
+|   |   |   |--- pos_id >  9.000000
+|   |   |   |   |--- class: 1
+|   |   |--- token_rank >  101.500000
+|   |   |   |--- word_sentence_frequency <= 196.000000
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_sentence_frequency >  196.000000
+|   |   |   |   |--- class: 1
+|   |--- word_burstiness >  -0.156625
+|   |   |--- class: 0
+|--- position_in_sentence >  1.500000
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence <= 18.500000
+|   |   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  18.500000
+|   |   |   |--- word_burstiness <= -0.296063
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_burstiness >  -0.296063
+|   |   |   |   |--- class: 1
+|   |--- position_in_sentence >  19.500000
+|   |   |--- position_in_sentence <= 38.500000
+|   |   |   |--- position_in_sentence <= 24.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  24.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  38.500000
+|   |   |   |--- position_in_sentence <= 39.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  39.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+     4 |      1338 |  1323 | 0.9888
+     7 |      8326 |  7428 | 0.8921
+     5 |        21 |    16 | 0.7619
+    17 |       637 |   469 | 0.7363
+     8 |       308 |   189 | 0.6136
+    16 |      9362 |  3707 | 0.3960
+    23 |      7711 |  1777 | 0.2305
+    14 |    160000 | 21056 | 0.1316
+    24 |    106794 |  8036 | 0.0752
+    20 |     49855 |  3389 | 0.0680
+    21 |    127097 |  2516 | 0.0198
+     9 |     10007 |    78 | 0.0078
+    13 |     10000 |    16 | 0.0016

@@ -1,0 +1,23 @@
+|--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence >  19.500000
+|   |   |--- word_sentence_frequency <= 5474.500000
+|   |   |   |--- word_sentence_frequency <= 5213.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence >  19.500000
+|   |   |--- word_sentence_frequency >  5474.500000
+|   |   |   |--- word_sentence_frequency <= 6425.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence >  19.500000
+|   |   |--- word_sentence_frequency >  5474.500000
+|   |   |   |--- word_sentence_frequency >  6425.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  20.500000
+|   |--- pos_id <= 10.500000
+|   |   |--- position_in_sentence <= 36.500000
+|   |   |   |--- position_in_sentence >  35.500000
+|   |   |   |   |--- class: 1

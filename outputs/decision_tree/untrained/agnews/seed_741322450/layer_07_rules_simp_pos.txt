@@ -1,0 +1,4 @@
+|--- token_rank >  6.500000
+|   |--- token_rank <= 8.500000
+|   |   |--- token_rank >  7.500000
+|   |   |   |   |--- class: 1

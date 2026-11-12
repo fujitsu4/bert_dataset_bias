@@ -1,0 +1,22 @@
+|--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence <= 4.500000
+|   |   |   |--- position_in_sentence >  3.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence >  19.500000
+|   |   |--- word_burstiness <= -0.304836
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence >  19.500000
+|   |   |--- word_burstiness >  -0.304836
+|   |   |   |--- depth_in_tree <= 2.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  20.500000
+|   |--- position_in_sentence >  25.500000
+|   |   |--- position_in_sentence >  64.500000
+|   |   |   |--- position_in_sentence <= 65.500000
+|   |   |   |   |--- class: 1

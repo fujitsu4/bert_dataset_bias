@@ -1,0 +1,10 @@
+|--- position_in_sentence <= 1.500000
+|   |--- token_rank >  35.000000
+|   |   |--- relative_position <= 0.022992
+|   |   |   |--- is_stopword >  0.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 1.500000
+|   |--- token_rank >  35.000000
+|   |   |--- relative_position >  0.022992
+|   |   |   |   |--- class: 1

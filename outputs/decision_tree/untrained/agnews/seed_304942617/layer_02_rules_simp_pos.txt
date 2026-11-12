@@ -1,0 +1,16 @@
+|--- word_sentence_frequency >  1865.500000
+|   |--- dep_id <= 9.500000
+|   |   |--- dep_id <= 8.500000
+|   |   |   |--- word_sentence_frequency >  5911.500000
+|   |   |   |   |--- class: 1
+
+|--- word_sentence_frequency >  1865.500000
+|   |--- dep_id <= 9.500000
+|   |   |--- dep_id >  8.500000
+|   |   |   |   |--- class: 1
+
+|--- word_sentence_frequency >  1865.500000
+|   |--- dep_id >  9.500000
+|   |   |--- word_burstiness >  -0.266965
+|   |   |   |--- position_in_sentence <= 16.500000
+|   |   |   |   |--- class: 1

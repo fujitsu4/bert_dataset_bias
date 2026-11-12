@@ -1,0 +1,4 @@
+|--- position_in_sentence <= 47.500000
+|   |--- position_in_sentence >  32.500000
+|   |   |--- position_in_sentence <= 33.500000
+|   |   |   |   |--- class: 1

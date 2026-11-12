@@ -1,0 +1,41 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- relative_position <= 0.003704
+|   |--- class: 1
+|--- relative_position >  0.003704
+|   |--- word_burstiness <= -0.325180
+|   |   |--- word_burstiness <= -0.353127
+|   |   |   |--- position_in_sentence <= 10.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  10.500000
+|   |   |   |   |--- class: 0
+|   |   |--- word_burstiness >  -0.353127
+|   |   |   |--- token_rank <= 7.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  7.500000
+|   |   |   |   |--- class: 0
+|   |--- word_burstiness >  -0.325180
+|   |   |--- token_length <= 2.500000
+|   |   |   |--- word_sentence_frequency <= 20.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_sentence_frequency >  20.500000
+|   |   |   |   |--- class: 0
+|   |   |--- token_length >  2.500000
+|   |   |   |--- position_in_sentence <= 38.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  38.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+     1 |     10000 |  8012 | 0.8012
+     8 |      7626 |  3620 | 0.4747
+     9 |      8559 |  2305 | 0.2693
+     5 |     92221 | 11416 | 0.1238
+    15 |     11585 |  1228 | 0.1060
+     6 |    317915 | 23175 | 0.0729
+    12 |       214 |    13 | 0.0607
+    16 |     12222 |   126 | 0.0103
+    13 |     31114 |   105 | 0.0034

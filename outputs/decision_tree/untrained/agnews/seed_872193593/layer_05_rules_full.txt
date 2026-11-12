@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 19.500000
+|   |--- position_in_sentence <= 16.500000
+|   |   |--- position_in_sentence <= 4.500000
+|   |   |   |--- position_in_sentence <= 3.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  3.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  4.500000
+|   |   |   |--- position_in_sentence <= 11.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  11.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  16.500000
+|   |   |--- position_in_sentence <= 17.500000
+|   |   |   |--- is_punctuation <= 0.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- is_punctuation >  0.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  17.500000
+|   |   |   |--- relative_position <= 0.420413
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.420413
+|   |   |   |   |--- class: 0
+|--- position_in_sentence >  19.500000
+|   |--- position_in_sentence <= 41.500000
+|   |   |--- position_in_sentence <= 27.500000
+|   |   |   |--- position_in_sentence <= 21.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  21.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  27.500000
+|   |   |   |--- position_in_sentence <= 35.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  35.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  41.500000
+|   |   |--- position_in_sentence <= 50.500000
+|   |   |   |--- position_in_sentence <= 48.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  48.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  50.500000
+|   |   |   |--- position_in_sentence <= 54.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  54.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    11 |      8938 |  4794 | 0.5364
+     5 |     10000 |  4921 | 0.4921
+    27 |      9098 |  4056 | 0.4458
+    15 |      7805 |  1610 | 0.2063
+    26 |     41593 |  6981 | 0.1678
+     8 |     50000 |  7983 | 0.1597
+     4 |     40000 |  5852 | 0.1463
+    12 |      1062 |   121 | 0.1139
+    30 |     26827 |  2825 | 0.1053
+    14 |     12194 |  1206 | 0.0989
+    22 |     73202 |  5372 | 0.0734
+     7 |     70000 |  3153 | 0.0450
+    19 |     19989 |   551 | 0.0276
+    29 |     14685 |   113 | 0.0077
+    20 |     59239 |   324 | 0.0055
+    23 |     46824 |   138 | 0.0029

@@ -1,0 +1,4 @@
+|--- position_in_sentence <= 31.500000
+|   |--- position_in_sentence >  29.500000
+|   |   |--- word_sentence_frequency >  7056.000000
+|   |   |   |   |--- class: 1

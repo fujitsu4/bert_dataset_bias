@@ -1,0 +1,11 @@
+|--- token_rank >  3.500000
+|   |--- token_rank <= 18.500000
+|   |   |--- token_length <= 2.500000
+|   |   |   |--- token_rank >  16.500000
+|   |   |   |   |--- class: 1
+
+|--- token_rank >  3.500000
+|   |--- token_rank <= 18.500000
+|   |   |--- token_length >  2.500000
+|   |   |   |--- pos_id <= 4.500000
+|   |   |   |   |--- class: 1

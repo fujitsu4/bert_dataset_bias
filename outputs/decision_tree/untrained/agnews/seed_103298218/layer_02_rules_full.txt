@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 28.500000
+|   |--- position_in_sentence <= 26.500000
+|   |   |--- position_in_sentence <= 1.500000
+|   |   |   |--- next_pos_id <= 10.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- next_pos_id >  10.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  1.500000
+|   |   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  26.500000
+|   |   |--- word_burstiness <= -0.397450
+|   |   |   |--- relative_position <= 0.555510
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.555510
+|   |   |   |   |--- class: 0
+|   |   |--- word_burstiness >  -0.397450
+|   |   |   |--- pos_id <= 7.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- pos_id >  7.500000
+|   |   |   |   |--- class: 0
+|--- position_in_sentence >  28.500000
+|   |--- position_in_sentence <= 47.500000
+|   |   |--- position_in_sentence <= 34.500000
+|   |   |   |--- position_in_sentence <= 31.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  31.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  34.500000
+|   |   |   |--- token_rank <= 12.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  12.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  47.500000
+|   |   |--- position_in_sentence <= 48.500000
+|   |   |   |--- word_burstiness <= -0.376267
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_burstiness >  -0.376267
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  48.500000
+|   |   |   |--- word_sentence_frequency <= 5747.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_sentence_frequency >  5747.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    27 |      1176 |  1067 | 0.9073
+    14 |      2531 |  1788 | 0.7064
+    26 |      3850 |  2041 | 0.5301
+     7 |     10000 |  4689 | 0.4689
+    12 |      8241 |  2895 | 0.3513
+    15 |      1184 |   280 | 0.2365
+    11 |      7362 |  1613 | 0.2191
+    29 |     42136 |  4872 | 0.1156
+    20 |     26826 |  3077 | 0.1147
+     8 |    239521 | 24925 | 0.1041
+    23 |     63970 |  1941 | 0.0303
+    30 |      8474 |   184 | 0.0217
+    19 |     28144 |   438 | 0.0156
+    22 |     28041 |   189 | 0.0067
+     5 |       651 |     1 | 0.0015
+     4 |     19349 |     0 | 0.0000

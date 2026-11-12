@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 6.500000
+|   |--- token_rank <= 41.500000
+|   |   |--- token_rank <= 17.500000
+|   |   |   |--- is_stopword <= 0.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- is_stopword >  0.500000
+|   |   |   |   |--- class: 0
+|   |   |--- token_rank >  17.500000
+|   |   |   |--- token_rank <= 20.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  20.500000
+|   |   |   |   |--- class: 0
+|   |--- token_rank >  41.500000
+|   |   |--- position_in_sentence <= 3.500000
+|   |   |   |--- relative_position <= 0.080541
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.080541
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  3.500000
+|   |   |   |--- position_in_sentence <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  5.500000
+|   |   |   |   |--- class: 0
+|--- position_in_sentence >  6.500000
+|   |--- token_rank <= 17.500000
+|   |   |--- position_in_sentence <= 43.500000
+|   |   |   |--- position_in_sentence <= 18.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  18.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  43.500000
+|   |   |   |--- position_in_sentence <= 47.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  47.500000
+|   |   |   |   |--- class: 0
+|   |--- token_rank >  17.500000
+|   |   |--- token_rank <= 20.500000
+|   |   |   |--- token_rank <= 19.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  19.500000
+|   |   |   |   |--- class: 1
+|   |   |--- token_rank >  20.500000
+|   |   |   |--- position_in_sentence <= 7.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  7.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    27 |      1979 |  1742 | 0.8802
+    29 |      8199 |  2543 | 0.3102
+    22 |      7821 |  2396 | 0.3064
+    12 |      1678 |   395 | 0.2354
+    26 |      4020 |   814 | 0.2025
+    30 |    287600 | 34767 | 0.1209
+    19 |     25157 |  2539 | 0.1009
+     7 |       121 |    11 | 0.0909
+    15 |      7732 |   432 | 0.0559
+    23 |     21930 |  1028 | 0.0469
+    11 |     23642 |   974 | 0.0412
+    20 |     64750 |  2281 | 0.0352
+     8 |      2611 |    19 | 0.0073
+     5 |      4411 |    24 | 0.0054
+    14 |     15281 |    32 | 0.0021
+     4 |     14524 |     3 | 0.0002

@@ -1,0 +1,11 @@
+|--- word_sentence_frequency >  7056.000000
+|   |--- token_rank >  1.500000
+|   |   |--- position_in_sentence <= 30.500000
+|   |   |   |--- position_in_sentence >  21.500000
+|   |   |   |   |--- class: 1
+
+|--- word_sentence_frequency >  7056.000000
+|   |--- token_rank >  1.500000
+|   |   |--- position_in_sentence >  30.500000
+|   |   |   |--- position_in_sentence >  39.500000
+|   |   |   |   |--- class: 1

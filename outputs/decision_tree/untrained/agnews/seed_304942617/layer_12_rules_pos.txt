@@ -1,0 +1,14 @@
+|--- relative_position <= 0.003704
+|   |--- class: 1
+
+|--- relative_position >  0.003704
+|   |--- position_in_sentence >  41.500000
+|   |   |--- position_in_sentence <= 42.500000
+|   |   |   |--- word_burstiness <= -0.297101
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.003704
+|   |--- position_in_sentence >  41.500000
+|   |   |--- position_in_sentence <= 42.500000
+|   |   |   |--- word_burstiness >  -0.297101
+|   |   |   |   |--- class: 1

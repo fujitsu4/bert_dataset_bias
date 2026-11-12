@@ -1,0 +1,5 @@
+|--- token_rank >  2.500000
+|   |--- word_burstiness >  -0.266045
+|   |   |--- position_in_sentence <= 23.500000
+|   |   |   |--- position_in_sentence >  15.500000
+|   |   |   |   |--- class: 1

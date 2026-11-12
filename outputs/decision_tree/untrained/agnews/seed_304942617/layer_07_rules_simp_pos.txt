@@ -1,0 +1,14 @@
+|--- relative_position <= 0.003704
+|   |--- class: 1
+
+|--- relative_position >  0.003704
+|   |--- relative_position <= 0.406024
+|   |   |--- token_rank <= 9.500000
+|   |   |   |--- token_rank >  8.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.003704
+|   |--- relative_position >  0.406024
+|   |   |--- position_in_sentence <= 35.500000
+|   |   |   |--- position_in_sentence >  33.500000
+|   |   |   |   |--- class: 1

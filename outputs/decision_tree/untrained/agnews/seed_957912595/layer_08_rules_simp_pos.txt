@@ -1,0 +1,5 @@
+|--- relative_position >  0.003704
+|   |--- dep_id >  34.500000
+|   |   |--- token_rank <= 16.500000
+|   |   |   |--- token_rank >  15.500000
+|   |   |   |   |--- class: 1

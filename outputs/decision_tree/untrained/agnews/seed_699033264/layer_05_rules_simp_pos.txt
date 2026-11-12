@@ -1,0 +1,4 @@
+|--- word_sentence_frequency >  5911.500000
+|   |--- token_rank >  4.000000
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 1
