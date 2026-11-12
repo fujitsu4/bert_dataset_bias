@@ -1,0 +1,22 @@
+|--- position_in_sentence <= 29.500000
+|   |--- is_punctuation <= 0.500000
+|   |   |--- relative_position >  0.934409
+|   |   |   |--- position_in_sentence >  19.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 29.500000
+|   |--- is_punctuation >  0.500000
+|   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 29.500000
+|   |--- is_punctuation >  0.500000
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |--- position_in_sentence >  19.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  29.500000
+|   |--- position_in_sentence >  50.500000
+|   |   |--- position_in_sentence <= 53.500000
+|   |   |   |--- relative_position >  0.980951
+|   |   |   |   |--- class: 1

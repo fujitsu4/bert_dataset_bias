@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- relative_position <= 0.173495
+|   |--- relative_position <= 0.146087
+|   |   |--- dep_id <= 19.500000
+|   |   |   |--- token_rank <= 29.000000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  29.000000
+|   |   |   |   |--- class: 0
+|   |   |--- dep_id >  19.500000
+|   |   |   |--- token_relative_frequency <= 0.108187
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_relative_frequency >  0.108187
+|   |   |   |   |--- class: 1
+|   |--- relative_position >  0.146087
+|   |   |--- word_sentence_frequency <= 557.500000
+|   |   |   |--- token_rank <= 31.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- token_rank >  31.500000
+|   |   |   |   |--- class: 0
+|   |   |--- word_sentence_frequency >  557.500000
+|   |   |   |--- pos_id <= 1.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- pos_id >  1.500000
+|   |   |   |   |--- class: 0
+|--- relative_position >  0.173495
+|   |--- word_sentence_frequency <= 7731.000000
+|   |   |--- position_in_sentence <= 6.500000
+|   |   |   |--- position_in_sentence <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  5.500000
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  6.500000
+|   |   |   |--- position_in_sentence <= 10.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  10.500000
+|   |   |   |   |--- class: 0
+|   |--- word_sentence_frequency >  7731.000000
+|   |   |--- position_in_sentence <= 13.500000
+|   |   |   |--- token_relative_frequency <= 0.095455
+|   |   |   |   |--- class: 1
+|   |   |   |--- token_relative_frequency >  0.095455
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  13.500000
+|   |   |   |--- relative_position <= 0.935417
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.935417
+|   |   |   |   |--- class: 1
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    26 |      3076 |  3076 | 1.0000
+    30 |      2514 |  2275 | 0.9049
+    27 |      2631 |  2276 | 0.8651
+    20 |      9949 |  8315 | 0.8358
+     8 |       109 |    70 | 0.6422
+    11 |       123 |    78 | 0.6341
+    19 |     30965 | 13478 | 0.4353
+    23 |     35192 | 14549 | 0.4134
+    12 |      1851 |   403 | 0.2177
+    29 |       642 |   100 | 0.1558
+    14 |      1014 |   138 | 0.1361
+    22 |     37080 |  4837 | 0.1304
+     7 |       376 |    38 | 0.1011
+     5 |      4417 |   252 | 0.0571
+    15 |       769 |    17 | 0.0221
+     4 |     20468 |    98 | 0.0048

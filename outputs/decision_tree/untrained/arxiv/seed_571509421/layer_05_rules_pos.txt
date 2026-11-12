@@ -1,0 +1,23 @@
+|--- position_in_sentence <= 1.500000
+|   |--- word_burstiness <= -0.260314
+|   |   |--- token_rank <= 186.000000
+|   |   |   |--- token_relative_frequency <= 0.011174
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 1.500000
+|   |--- word_burstiness <= -0.260314
+|   |   |--- token_rank <= 186.000000
+|   |   |   |--- token_relative_frequency >  0.011174
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 1.500000
+|   |--- word_burstiness <= -0.260314
+|   |   |--- token_rank >  186.000000
+|   |   |   |--- is_pronoun <= 0.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 1.500000
+|   |--- word_burstiness <= -0.260314
+|   |   |--- token_rank >  186.000000
+|   |   |   |--- is_pronoun >  0.500000
+|   |   |   |   |--- class: 1

@@ -1,0 +1,19 @@
+|--- relative_position <= 0.998120
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- pos_id <= 0.500000
+|   |   |   |--- word_burstiness <= -0.970173
+|   |   |   |   |--- class: 1
+
+|--- relative_position <= 0.998120
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- pos_id >  0.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.998120
+|   |--- position_in_sentence <= 18.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.998120
+|   |--- position_in_sentence >  18.500000
+|   |   |--- position_in_sentence >  19.500000
+|   |   |   |   |--- class: 1

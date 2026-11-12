@@ -1,0 +1,16 @@
+|--- position_in_sentence <= 29.500000
+|   |--- position_in_sentence <= 28.500000
+|   |   |--- position_in_sentence <= 23.500000
+|   |   |   |--- position_in_sentence >  21.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 29.500000
+|   |--- position_in_sentence >  28.500000
+|   |   |--- word_sentence_frequency <= 6355.000000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 29.500000
+|   |--- position_in_sentence >  28.500000
+|   |   |--- word_sentence_frequency >  6355.000000
+|   |   |   |--- dep_id >  4.500000
+|   |   |   |   |--- class: 1

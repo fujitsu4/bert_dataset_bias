@@ -1,0 +1,11 @@
+|--- relative_position <= 0.418393
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- dep_id >  0.500000
+|   |   |   |--- relative_position >  0.040833
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.418393
+|   |--- position_in_sentence <= 22.500000
+|   |   |--- position_in_sentence >  17.500000
+|   |   |   |--- position_in_sentence <= 19.500000
+|   |   |   |   |--- class: 1

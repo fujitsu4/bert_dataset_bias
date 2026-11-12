@@ -1,0 +1,11 @@
+|--- position_in_sentence <= 7.500000
+|   |--- token_rank <= 7.500000
+|   |   |--- relative_position >  0.310096
+|   |   |   |--- token_length >  2.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 7.500000
+|   |--- token_rank >  7.500000
+|   |   |--- token_rank <= 27.500000
+|   |   |   |--- word_burstiness <= -0.722276
+|   |   |   |   |--- class: 1

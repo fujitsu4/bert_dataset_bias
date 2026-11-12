@@ -1,0 +1,5 @@
+|--- token_length >  2.500000
+|   |--- word_sentence_frequency >  5649.500000
+|   |   |--- position_in_sentence <= 45.500000
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 1

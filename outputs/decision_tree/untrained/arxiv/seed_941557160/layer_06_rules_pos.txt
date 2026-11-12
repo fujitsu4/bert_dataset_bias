@@ -1,0 +1,5 @@
+|--- position_in_sentence >  8.500000
+|   |--- relative_position <= 0.535048
+|   |   |--- is_pronoun >  0.500000
+|   |   |   |--- word_sentence_frequency >  2155.500000
+|   |   |   |   |--- class: 1

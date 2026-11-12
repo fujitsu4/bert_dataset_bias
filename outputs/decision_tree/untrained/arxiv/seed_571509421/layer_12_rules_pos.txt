@@ -1,0 +1,23 @@
+|--- is_punctuation <= 0.500000
+|   |--- token_relative_frequency <= 0.033012
+|   |   |--- position_in_sentence <= 12.500000
+|   |   |   |--- relative_position >  0.687500
+|   |   |   |   |--- class: 1
+
+|--- is_punctuation >  0.500000
+|   |--- word_burstiness >  -0.226817
+|   |   |--- position_in_sentence <= 8.500000
+|   |   |   |--- position_in_sentence <= 4.500000
+|   |   |   |   |--- class: 1
+
+|--- is_punctuation >  0.500000
+|   |--- word_burstiness >  -0.226817
+|   |   |--- position_in_sentence >  8.500000
+|   |   |   |--- position_in_sentence <= 28.500000
+|   |   |   |   |--- class: 1
+
+|--- is_punctuation >  0.500000
+|   |--- word_burstiness >  -0.226817
+|   |   |--- position_in_sentence >  8.500000
+|   |   |   |--- position_in_sentence >  28.500000
+|   |   |   |   |--- class: 1

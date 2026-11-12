@@ -1,0 +1,23 @@
+|--- token_relative_frequency <= 0.031010
+|   |--- token_rank >  2.500000
+|   |   |--- token_rank <= 3.500000
+|   |   |   |--- position_in_sentence >  18.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.031010
+|   |--- word_burstiness <= -0.251130
+|   |   |--- position_in_sentence >  6.500000
+|   |   |   |--- position_in_sentence <= 9.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.031010
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_burstiness <= -0.247719
+|   |   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.031010
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_burstiness <= -0.247719
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 1

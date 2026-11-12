@@ -1,0 +1,15 @@
+|--- prev_pos_id <= -0.500000
+|   |--- word_sentence_frequency <= 1151.000000
+|   |   |--- position_in_sentence <= 18.500000
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id <= -0.500000
+|   |--- word_sentence_frequency >  1151.000000
+|   |   |--- word_burstiness <= -0.720331
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id >  -0.500000
+|   |--- word_burstiness >  -0.495020
+|   |   |--- token_rank >  163.000000
+|   |   |   |--- word_burstiness <= -0.492781
+|   |   |   |   |--- class: 1

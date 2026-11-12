@@ -1,0 +1,8 @@
+|--- relative_position <= 0.001880
+|   |--- class: 1
+
+|--- relative_position >  0.001880
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_sentence_frequency >  5186.000000
+|   |   |   |--- relative_position >  0.301737
+|   |   |   |   |--- class: 1

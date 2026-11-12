@@ -1,0 +1,11 @@
+|--- token_relative_frequency <= 0.027650
+|   |--- token_rank >  3.500000
+|   |   |--- token_rank <= 16.500000
+|   |   |   |--- word_burstiness <= -0.656376
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.027650
+|   |--- is_pronoun >  0.500000
+|   |   |--- token_length <= 3.500000
+|   |   |   |--- word_sentence_frequency >  622.000000
+|   |   |   |   |--- class: 1

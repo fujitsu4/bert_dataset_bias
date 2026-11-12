@@ -1,0 +1,23 @@
+|--- position_in_sentence <= 3.500000
+|   |--- relative_position <= 0.035929
+|   |   |--- position_in_sentence >  1.500000
+|   |   |   |--- prev_pos_id >  0.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 3.500000
+|   |--- relative_position >  0.035929
+|   |   |--- position_in_sentence <= 2.500000
+|   |   |   |--- position_in_sentence >  1.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 3.500000
+|   |--- relative_position >  0.035929
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |--- pos_id >  13.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  3.500000
+|   |--- position_in_sentence >  12.500000
+|   |   |--- position_in_sentence <= 13.500000
+|   |   |   |--- relative_position >  0.356231
+|   |   |   |   |--- class: 1

@@ -1,0 +1,47 @@
+|--- relative_position <= 0.992188
+|   |--- position_in_sentence <= 4.500000
+|   |   |--- is_stopword <= 0.500000
+|   |   |   |--- word_sentence_frequency >  1998.000000
+|   |   |   |   |--- class: 1
+
+|--- relative_position <= 0.992188
+|   |--- position_in_sentence >  4.500000
+|   |   |--- position_in_sentence <= 8.500000
+|   |   |   |--- position_in_sentence >  7.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.992188
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence <= 15.500000
+|   |   |   |--- position_in_sentence <= 12.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.992188
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence <= 15.500000
+|   |   |   |--- position_in_sentence >  12.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.992188
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence >  15.500000
+|   |   |   |--- position_in_sentence <= 17.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.992188
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence >  15.500000
+|   |   |   |--- position_in_sentence >  17.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.992188
+|   |--- position_in_sentence >  19.500000
+|   |   |--- position_in_sentence >  20.500000
+|   |   |   |--- position_in_sentence <= 26.500000
+|   |   |   |   |--- class: 1
+
+|--- relative_position >  0.992188
+|   |--- position_in_sentence >  19.500000
+|   |   |--- position_in_sentence >  20.500000
+|   |   |   |--- position_in_sentence >  26.500000
+|   |   |   |   |--- class: 1

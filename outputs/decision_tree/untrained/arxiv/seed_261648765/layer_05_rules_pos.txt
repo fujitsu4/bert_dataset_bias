@@ -1,0 +1,17 @@
+|--- position_in_sentence <= 18.500000
+|   |--- position_in_sentence >  17.500000
+|   |   |--- token_relative_frequency >  0.011629
+|   |   |   |--- relative_position <= 0.654762
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 18.500000
+|   |--- position_in_sentence >  17.500000
+|   |   |--- token_relative_frequency >  0.011629
+|   |   |   |--- relative_position >  0.654762
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  18.500000
+|   |--- token_rank >  1.500000
+|   |   |--- word_burstiness >  -0.337976
+|   |   |   |--- pos_id <= 1.500000
+|   |   |   |   |--- class: 1

@@ -1,0 +1,22 @@
+|--- next_pos_id <= -0.500000
+|   |--- relative_position <= 0.925824
+|   |   |--- is_punctuation <= 0.500000
+|   |   |   |--- word_burstiness >  -0.553612
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- relative_position <= 0.925824
+|   |   |--- is_punctuation >  0.500000
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id <= -0.500000
+|   |--- relative_position >  0.925824
+|   |   |--- position_in_sentence >  14.500000
+|   |   |   |--- relative_position <= 0.942810
+|   |   |   |   |--- class: 1
+
+|--- next_pos_id >  -0.500000
+|   |--- token_rank >  3.500000
+|   |   |--- token_rank <= 5.500000
+|   |   |   |--- position_in_sentence >  4.500000
+|   |   |   |   |--- class: 1

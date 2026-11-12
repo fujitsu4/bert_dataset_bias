@@ -1,0 +1,10 @@
+|--- word_burstiness <= -0.381381
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- word_sentence_frequency <= 1079.000000
+|   |   |   |--- token_length >  6.500000
+|   |   |   |   |--- class: 1
+
+|--- word_burstiness <= -0.381381
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- word_sentence_frequency >  1079.000000
+|   |   |   |   |--- class: 1

@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 4.500000
+|   |--- position_in_sentence <= 3.500000
+|   |   |--- position_in_sentence <= 1.500000
+|   |   |   |--- relative_position <= 0.064583
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.064583
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  1.500000
+|   |   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  3.500000
+|   |   |--- dep_id <= 0.500000
+|   |   |   |--- word_sentence_frequency <= 5039.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_sentence_frequency >  5039.500000
+|   |   |   |   |--- class: 0
+|   |   |--- dep_id >  0.500000
+|   |   |   |--- token_rank <= 16.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- token_rank >  16.500000
+|   |   |   |   |--- class: 1
+|--- position_in_sentence >  4.500000
+|   |--- word_burstiness <= -0.251130
+|   |   |--- position_in_sentence <= 31.500000
+|   |   |   |--- position_in_sentence <= 30.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  30.500000
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  31.500000
+|   |   |   |--- position_in_sentence <= 33.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  33.500000
+|   |   |   |   |--- class: 0
+|   |--- word_burstiness >  -0.251130
+|   |   |--- token_rank <= 4.000000
+|   |   |   |--- position_in_sentence <= 14.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  14.500000
+|   |   |   |   |--- class: 0
+|   |   |--- token_rank >  4.000000
+|   |   |   |--- word_sentence_frequency <= 2219.000000
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_sentence_frequency >  2219.000000
+|   |   |   |   |--- class: 1
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    14 |      2651 |  2647 | 0.9985
+    11 |       375 |   365 | 0.9733
+    15 |      6686 |  5660 | 0.8465
+    30 |      6516 |  4665 | 0.7159
+     7 |     10000 |  5818 | 0.5818
+    20 |      4459 |  2503 | 0.5613
+    26 |      3064 |  1465 | 0.4781
+    12 |       288 |    56 | 0.1944
+    19 |    207895 | 23253 | 0.1118
+    27 |     15009 |  1576 | 0.1050
+    23 |     43560 |  1765 | 0.0405
+    29 |       877 |    34 | 0.0388
+     5 |       421 |    10 | 0.0238
+     8 |     10000 |   153 | 0.0153
+    22 |      8100 |    17 | 0.0021
+     4 |     19579 |    13 | 0.0007

@@ -1,0 +1,57 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 1.500000
+|   |--- word_sentence_frequency <= 1079.000000
+|   |   |--- relative_position <= 0.027402
+|   |   |   |--- word_sentence_frequency <= 449.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_sentence_frequency >  449.500000
+|   |   |   |   |--- class: 0
+|   |   |--- relative_position >  0.027402
+|   |   |   |--- token_length <= 3.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- token_length >  3.500000
+|   |   |   |   |--- class: 0
+|   |--- word_sentence_frequency >  1079.000000
+|   |   |--- class: 1
+|--- position_in_sentence >  1.500000
+|   |--- word_sentence_frequency <= 6355.000000
+|   |   |--- position_in_sentence <= 26.500000
+|   |   |   |--- position_in_sentence <= 25.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  25.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  26.500000
+|   |   |   |--- token_rank <= 5.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  5.500000
+|   |   |   |   |--- class: 0
+|   |--- word_sentence_frequency >  6355.000000
+|   |   |--- token_length <= 2.000000
+|   |   |   |--- position_in_sentence <= 17.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  17.500000
+|   |   |   |   |--- class: 0
+|   |   |--- token_length >  2.000000
+|   |   |   |--- position_in_sentence <= 43.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  43.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+     9 |      2822 |  2822 | 1.0000
+     7 |      2269 |  1616 | 0.7122
+    23 |     11204 |  5446 | 0.4861
+     8 |      2540 |  1214 | 0.4780
+     4 |     11800 |  5053 | 0.4282
+    14 |      6253 |  2502 | 0.4001
+    24 |       683 |   150 | 0.2196
+     5 |       569 |   101 | 0.1775
+    13 |    212218 | 26379 | 0.1243
+    20 |       999 |   122 | 0.1221
+    17 |     66072 |  4499 | 0.0681
+    16 |     13073 |    95 | 0.0073
+    21 |      8978 |     1 | 0.0001

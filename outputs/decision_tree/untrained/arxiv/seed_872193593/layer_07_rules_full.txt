@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 20.500000
+|   |--- position_in_sentence <= 19.500000
+|   |   |--- position_in_sentence <= 2.500000
+|   |   |   |--- relative_position <= 0.148352
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.148352
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |--- position_in_sentence <= 16.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  16.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  19.500000
+|   |   |--- relative_position <= 0.563492
+|   |   |   |--- word_sentence_frequency <= 6355.000000
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_sentence_frequency >  6355.000000
+|   |   |   |   |--- class: 1
+|   |   |--- relative_position >  0.563492
+|   |   |   |--- token_rank <= 1.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- token_rank >  1.500000
+|   |   |   |   |--- class: 1
+|--- position_in_sentence >  20.500000
+|   |--- word_sentence_frequency <= 4648.500000
+|   |   |--- word_sentence_frequency <= 4358.000000
+|   |   |   |--- word_sentence_frequency <= 2739.000000
+|   |   |   |   |--- class: 0
+|   |   |   |--- word_sentence_frequency >  2739.000000
+|   |   |   |   |--- class: 0
+|   |   |--- word_sentence_frequency >  4358.000000
+|   |   |   |--- position_in_sentence <= 32.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- position_in_sentence >  32.500000
+|   |   |   |   |--- class: 0
+|   |--- word_sentence_frequency >  4648.500000
+|   |   |--- token_rank <= 1.500000
+|   |   |   |--- position_in_sentence <= 29.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  29.500000
+|   |   |   |   |--- class: 0
+|   |   |--- token_rank >  1.500000
+|   |   |   |--- relative_position <= 0.972598
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.972598
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    14 |       461 |   455 | 0.9870
+    12 |       126 |   124 | 0.9841
+    15 |      4787 |  3710 | 0.7750
+    22 |      1409 |   931 | 0.6608
+    11 |      3393 |  2077 | 0.6121
+    23 |       780 |   262 | 0.3359
+     5 |       187 |    47 | 0.2513
+     7 |    138941 | 33194 | 0.2389
+    20 |      6145 |  1164 | 0.1894
+    27 |      2257 |   277 | 0.1227
+    19 |    103461 |  6496 | 0.0628
+    30 |      3211 |   137 | 0.0427
+     8 |     27616 |   894 | 0.0324
+    26 |      2236 |    44 | 0.0197
+     4 |     29813 |   138 | 0.0046
+    29 |     14657 |    50 | 0.0034

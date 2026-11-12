@@ -1,0 +1,5 @@
+|--- position_in_sentence <= 14.500000
+|   |--- relative_position >  0.181187
+|   |   |--- pos_id <= 0.500000
+|   |   |   |--- word_sentence_frequency >  5039.500000
+|   |   |   |   |--- class: 1

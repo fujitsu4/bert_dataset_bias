@@ -1,0 +1,28 @@
+|--- position_in_sentence <= 3.500000
+|   |--- position_in_sentence <= 1.500000
+|   |   |--- word_burstiness <= -0.970173
+|   |   |   |--- word_sentence_frequency >  449.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 3.500000
+|   |--- position_in_sentence >  1.500000
+|   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 3.500000
+|   |--- position_in_sentence >  1.500000
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |--- token_rank <= 3.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  3.500000
+|   |--- word_sentence_frequency <= 4648.500000
+|   |   |--- word_burstiness <= -0.513004
+|   |   |   |--- word_sentence_frequency >  2395.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  3.500000
+|   |--- word_sentence_frequency >  4648.500000
+|   |   |--- token_rank >  5.000000
+|   |   |   |--- relative_position >  0.440588
+|   |   |   |   |--- class: 1

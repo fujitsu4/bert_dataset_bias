@@ -1,0 +1,17 @@
+|--- token_relative_frequency <= 0.033196
+|   |--- token_rank >  2.500000
+|   |   |--- word_sentence_frequency >  4648.500000
+|   |   |   |--- pos_id >  3.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.033196
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_sentence_frequency >  5186.000000
+|   |   |   |--- position_in_sentence <= 8.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.033196
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_sentence_frequency >  5186.000000
+|   |   |   |--- position_in_sentence >  8.500000
+|   |   |   |   |--- class: 1

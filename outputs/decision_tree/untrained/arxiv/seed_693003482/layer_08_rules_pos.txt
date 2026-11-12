@@ -1,0 +1,23 @@
+|--- token_rank <= 1.500000
+|   |--- relative_position <= 0.959167
+|   |   |--- position_in_sentence <= 14.500000
+|   |   |   |--- position_in_sentence <= 6.500000
+|   |   |   |   |--- class: 1
+
+|--- token_rank <= 1.500000
+|   |--- relative_position <= 0.959167
+|   |   |--- position_in_sentence >  14.500000
+|   |   |   |--- position_in_sentence <= 23.500000
+|   |   |   |   |--- class: 1
+
+|--- token_rank <= 1.500000
+|   |--- relative_position >  0.959167
+|   |   |--- position_in_sentence <= 21.500000
+|   |   |   |--- position_in_sentence >  20.500000
+|   |   |   |   |--- class: 1
+
+|--- token_rank >  1.500000
+|   |--- position_in_sentence >  15.500000
+|   |   |--- position_in_sentence <= 18.500000
+|   |   |   |--- relative_position >  0.589400
+|   |   |   |   |--- class: 1

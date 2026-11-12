@@ -1,0 +1,4 @@
+|--- is_punctuation >  0.500000
+|   |--- token_rank >  10.500000
+|   |   |--- pos_id <= 3.500000
+|   |   |   |   |--- class: 1

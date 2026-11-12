@@ -1,0 +1,57 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 1.500000
+|   |--- is_special_token <= 0.500000
+|   |   |--- token_rank <= 57.000000
+|   |   |   |--- ent_id <= 0.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- ent_id >  0.500000
+|   |   |   |   |--- class: 1
+|   |   |--- token_rank >  57.000000
+|   |   |   |--- word_sentence_frequency <= 248.000000
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_sentence_frequency >  248.000000
+|   |   |   |   |--- class: 0
+|   |--- is_special_token >  0.500000
+|   |   |--- class: 0
+|--- position_in_sentence >  1.500000
+|   |--- word_sentence_frequency <= 3542.000000
+|   |   |--- token_rank <= 11.500000
+|   |   |   |--- position_in_sentence <= 10.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  10.500000
+|   |   |   |   |--- class: 0
+|   |   |--- token_rank >  11.500000
+|   |   |   |--- position_in_sentence <= 10.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  10.500000
+|   |   |   |   |--- class: 0
+|   |--- word_sentence_frequency >  3542.000000
+|   |   |--- position_in_sentence <= 10.500000
+|   |   |   |--- position_in_sentence <= 7.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- position_in_sentence >  7.500000
+|   |   |   |   |--- class: 1
+|   |   |--- position_in_sentence >  10.500000
+|   |   |   |--- position_in_sentence <= 12.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  12.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+     4 |      7372 |  7372 | 1.0000
+     7 |      1620 |  1564 | 0.9654
+     5 |       753 |   725 | 0.9628
+    21 |      7178 |  6743 | 0.9394
+    20 |      8939 |  4556 | 0.5097
+     9 |     10000 |  4054 | 0.4054
+    16 |     59090 | 18657 | 0.3157
+    24 |      6659 |  1927 | 0.2894
+     8 |       255 |    70 | 0.2745
+    17 |     20499 |  2599 | 0.1268
+    13 |     14544 |  1458 | 0.1002
+    23 |      3780 |   154 | 0.0407
+    14 |     10487 |   121 | 0.0115

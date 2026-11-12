@@ -1,0 +1,11 @@
+|--- token_relative_frequency <= 0.028437
+|   |--- position_in_sentence <= 37.500000
+|   |   |--- position_in_sentence >  36.500000
+|   |   |   |--- relative_position <= 0.813285
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency <= 0.028437
+|   |--- position_in_sentence <= 37.500000
+|   |   |--- position_in_sentence >  36.500000
+|   |   |   |--- relative_position >  0.813285
+|   |   |   |   |--- class: 1

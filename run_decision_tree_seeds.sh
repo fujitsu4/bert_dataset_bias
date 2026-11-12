@@ -50,7 +50,7 @@ SEED_LINE="${SEED_LINE%]}"
 IFS=',' read -ra RAW <<< "$SEED_LINE"
 
 # Prepare output directory
-OUT_DIR="outputs/decision_tree/${DATASET}/untrained/"
+OUT_DIR="/content/drive/MyDrive/snli/outputs/attention_score"
 mkdir -p "$OUT_DIR"
 
 runs=0

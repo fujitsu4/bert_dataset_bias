@@ -1,0 +1,8 @@
+|--- relative_position <= 0.007812
+|   |--- class: 1
+
+|--- relative_position >  0.007812
+|   |--- position_in_sentence <= 9.500000
+|   |   |--- relative_position >  0.123724
+|   |   |   |--- position_in_sentence >  8.500000
+|   |   |   |   |--- class: 1

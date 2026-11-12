@@ -1,0 +1,22 @@
+|--- token_relative_frequency <= 0.065942
+|   |--- prev_pos_id >  -0.500000
+|   |   |--- token_rank <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.065942
+|   |--- token_rank <= 1.500000
+|   |   |--- position_in_sentence <= 6.500000
+|   |   |   |--- relative_position >  0.096875
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.065942
+|   |--- token_rank <= 1.500000
+|   |   |--- position_in_sentence >  6.500000
+|   |   |   |--- position_in_sentence >  7.500000
+|   |   |   |   |--- class: 1
+
+|--- token_relative_frequency >  0.065942
+|   |--- token_rank >  1.500000
+|   |   |--- relative_position >  0.175192
+|   |   |   |--- position_in_sentence <= 4.500000
+|   |   |   |   |--- class: 1

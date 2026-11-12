@@ -1,0 +1,9 @@
+|--- pos_id <= 10.500000
+|   |--- position_in_sentence <= 16.500000
+|   |   |--- position_in_sentence >  2.500000
+|   |   |   |--- position_in_sentence <= 3.500000
+|   |   |   |   |--- class: 1
+
+|--- pos_id >  10.500000
+|   |--- word_sentence_frequency >  2178.500000
+|   |   |   |   |--- class: 1

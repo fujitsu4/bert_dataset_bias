@@ -1,0 +1,23 @@
+|--- position_in_sentence <= 22.500000
+|   |--- is_punctuation <= 0.500000
+|   |   |--- position_in_sentence >  19.500000
+|   |   |   |--- position_in_sentence <= 20.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 22.500000
+|   |--- is_punctuation >  0.500000
+|   |   |--- word_sentence_frequency >  5186.000000
+|   |   |   |--- word_burstiness >  -0.549490
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  22.500000
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_burstiness <= -0.239691
+|   |   |   |--- position_in_sentence <= 23.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  22.500000
+|   |--- word_burstiness >  -0.251130
+|   |   |--- word_burstiness <= -0.239691
+|   |   |   |--- position_in_sentence >  23.500000
+|   |   |   |   |--- class: 1

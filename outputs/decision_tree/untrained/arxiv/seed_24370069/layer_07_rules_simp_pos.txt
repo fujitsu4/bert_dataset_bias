@@ -1,0 +1,17 @@
+|--- prev_pos_id <= -0.500000
+|   |--- relative_position <= 0.022600
+|   |   |--- word_sentence_frequency <= 787.000000
+|   |   |   |--- token_length <= 1.500000
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id <= -0.500000
+|   |--- relative_position >  0.022600
+|   |   |--- position_in_sentence <= 34.500000
+|   |   |   |--- is_subword <= 0.500000
+|   |   |   |   |--- class: 1
+
+|--- prev_pos_id >  -0.500000
+|   |--- word_sentence_frequency >  4648.500000
+|   |   |--- token_rank >  3.500000
+|   |   |   |--- position_in_sentence <= 12.500000
+|   |   |   |   |--- class: 1

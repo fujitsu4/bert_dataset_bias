@@ -1,0 +1,16 @@
+|--- word_sentence_frequency >  8208.000000
+|   |--- relative_position <= 0.967204
+|   |   |--- relative_position <= 0.955534
+|   |   |   |--- relative_position <= 0.953463
+|   |   |   |   |--- class: 1
+
+|--- word_sentence_frequency >  8208.000000
+|   |--- relative_position <= 0.967204
+|   |   |--- relative_position >  0.955534
+|   |   |   |   |--- class: 1
+
+|--- word_sentence_frequency >  8208.000000
+|   |--- relative_position >  0.967204
+|   |   |--- relative_position >  0.971008
+|   |   |   |--- position_in_sentence <= 37.500000
+|   |   |   |   |--- class: 1

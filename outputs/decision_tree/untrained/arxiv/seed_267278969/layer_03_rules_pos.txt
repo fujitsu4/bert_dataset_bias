@@ -1,0 +1,5 @@
+|--- position_in_sentence <= 26.500000
+|   |--- position_in_sentence >  25.500000
+|   |   |--- word_burstiness <= -0.226817
+|   |   |   |--- relative_position >  0.452208
+|   |   |   |   |--- class: 1

@@ -1,0 +1,17 @@
+|--- position_in_sentence <= 23.500000
+|   |--- position_in_sentence <= 8.500000
+|   |   |--- is_pronoun >  0.500000
+|   |   |   |--- word_sentence_frequency >  1576.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 23.500000
+|   |--- position_in_sentence >  8.500000
+|   |   |--- word_sentence_frequency >  6355.000000
+|   |   |   |--- position_in_sentence <= 10.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence >  23.500000
+|   |--- position_in_sentence >  39.500000
+|   |   |--- position_in_sentence <= 41.500000
+|   |   |   |--- word_sentence_frequency >  2739.000000
+|   |   |   |   |--- class: 1

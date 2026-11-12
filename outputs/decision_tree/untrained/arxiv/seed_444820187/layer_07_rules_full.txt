@@ -1,0 +1,69 @@
+=== Decision Tree Rules (sklearn export_text) ===
+
+        |--- position_in_sentence <= 4.500000
+|   |--- position_in_sentence <= 3.500000
+|   |   |--- depth_in_tree <= 1.500000
+|   |   |   |--- position_in_sentence <= 2.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 0
+|   |   |--- depth_in_tree >  1.500000
+|   |   |   |--- position_in_sentence <= 1.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  1.500000
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  3.500000
+|   |   |--- token_rank <= 1.500000
+|   |   |   |--- relative_position <= 0.145503
+|   |   |   |   |--- class: 0
+|   |   |   |--- relative_position >  0.145503
+|   |   |   |   |--- class: 1
+|   |   |--- token_rank >  1.500000
+|   |   |   |--- is_pronoun <= 0.500000
+|   |   |   |   |--- class: 1
+|   |   |   |--- is_pronoun >  0.500000
+|   |   |   |   |--- class: 1
+|--- position_in_sentence >  4.500000
+|   |--- position_in_sentence <= 20.500000
+|   |   |--- position_in_sentence <= 19.500000
+|   |   |   |--- position_in_sentence <= 12.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  12.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  19.500000
+|   |   |   |--- word_burstiness <= -0.287540
+|   |   |   |   |--- class: 1
+|   |   |   |--- word_burstiness >  -0.287540
+|   |   |   |   |--- class: 0
+|   |--- position_in_sentence >  20.500000
+|   |   |--- position_in_sentence <= 25.500000
+|   |   |   |--- position_in_sentence <= 24.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- position_in_sentence >  24.500000
+|   |   |   |   |--- class: 0
+|   |   |--- position_in_sentence >  25.500000
+|   |   |   |--- token_rank <= 13.500000
+|   |   |   |   |--- class: 0
+|   |   |   |--- token_rank >  13.500000
+|   |   |   |   |--- class: 0
+
+
+        === Per-leaf statistics (sorted by pos_rate desc) ===
+
+        LeafID | n_samples | n_pos | pos_rate
+    14 |      9207 |  8713 | 0.9463
+    12 |       158 |   103 | 0.6519
+    22 |      7664 |  4799 | 0.6262
+    15 |       365 |   196 | 0.5370
+     4 |     11723 |  4948 | 0.4221
+    23 |      1103 |   420 | 0.3808
+    27 |      7200 |  2581 | 0.3585
+    11 |       270 |    94 | 0.3481
+    20 |     66620 | 13996 | 0.2101
+     8 |     16995 |  3327 | 0.1958
+    19 |     79937 |  6664 | 0.0834
+    30 |     62865 |  2764 | 0.0440
+    26 |     32035 |  1052 | 0.0328
+     5 |      1332 |    24 | 0.0180
+     7 |      9950 |    85 | 0.0085
+    29 |     32056 |   234 | 0.0073

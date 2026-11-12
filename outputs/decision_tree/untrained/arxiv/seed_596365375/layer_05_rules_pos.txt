@@ -1,0 +1,5 @@
+|--- dep_id <= 1.500000
+|   |--- word_sentence_frequency >  5039.500000
+|   |   |--- position_in_sentence <= 4.500000
+|   |   |   |--- position_in_sentence >  2.500000
+|   |   |   |   |--- class: 1

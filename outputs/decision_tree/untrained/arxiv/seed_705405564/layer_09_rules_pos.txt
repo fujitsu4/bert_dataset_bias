@@ -1,0 +1,17 @@
+|--- position_in_sentence <= 24.500000
+|   |--- position_in_sentence <= 23.500000
+|   |   |--- token_rank >  6.500000
+|   |   |   |--- word_burstiness >  -0.369522
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 24.500000
+|   |--- position_in_sentence >  23.500000
+|   |   |--- word_burstiness <= -0.258837
+|   |   |   |--- pos_id <= 11.500000
+|   |   |   |   |--- class: 1
+
+|--- position_in_sentence <= 24.500000
+|   |--- position_in_sentence >  23.500000
+|   |   |--- word_burstiness >  -0.258837
+|   |   |   |--- token_rank >  4.000000
+|   |   |   |   |--- class: 1

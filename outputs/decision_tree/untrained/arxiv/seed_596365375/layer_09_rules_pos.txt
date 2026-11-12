@@ -1,0 +1,11 @@
+|--- num_dependents <= 0.500000
+|   |--- word_burstiness >  -0.466368
+|   |   |--- token_length >  7.500000
+|   |   |   |--- token_rank <= 186.000000
+|   |   |   |   |--- class: 1
+
+|--- num_dependents >  0.500000
+|   |--- word_sentence_frequency >  1660.000000
+|   |   |--- pos_id <= 0.500000
+|   |   |   |--- word_burstiness <= -0.419508
+|   |   |   |   |--- class: 1
