@@ -1,5 +1,4 @@
 # bert_dataset_bias
-
 ## A.Project overview
 This project contains scripts used in the article **"Interpreting Attention Allocation Patterns in
 Pretrained BERT Through Decision Trees"**.
