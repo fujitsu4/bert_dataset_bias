@@ -65,7 +65,7 @@ def main():
     "--dataset",
     type=str,
     required=True,
-    choices=["snli", "mnli", "agnews", "arxiv"],
+    choices=["snli", "agnews", "arxiv"],
     help="Dataset being processed"
 )
     args = parser.parse_args()

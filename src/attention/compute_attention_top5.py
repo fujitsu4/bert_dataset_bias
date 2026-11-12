@@ -95,7 +95,7 @@ def main():
     parser.add_argument("--top_k", type=int, default=5)
     parser.add_argument("--device", type=str, default=None)
     parser.add_argument("--dataset", type=str, required=True,
-                    choices=["snli", "mnli", "agnews", "arxiv"],
+                    choices=["snli", "agnews", "arxiv"],
                     help="Dataset being processed")
     args = parser.parse_args()
 

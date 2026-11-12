@@ -37,9 +37,9 @@ Usage:
         --input_csv /content/drive/MyDrive/results/attention_score/attention_top5_pretrained.csv \
         --tree_seed 42 \
         --layer 1 \
-        --save_full /content/llm_bias_with_dt/outputs/decision_tree/rules_full_pretrained_layer_1.txt \
-        --save_pos /content/llm_bias_with_dt/outputs/decision_tree/rules_pos_pretrained_layer_1.txt \
-        --save_simp_pos /content/llm_bias_with_dt/outputs/decision_tree/rules_simp_pos_pretrained_layer_1.txt
+        --save_full /content/bert_dataset_bias/outputs/decision_tree/rules_full_pretrained_layer_1.txt \
+        --save_pos /content/bert_dataset_bias/outputs/decision_tree/rules_pos_pretrained_layer_1.txt \
+        --save_simp_pos /content/bert_dataset_bias/outputs/decision_tree/rules_simp_pos_pretrained_layer_1.txt
 """
 
 from typing import List, Optional, Tuple, Dict, Any

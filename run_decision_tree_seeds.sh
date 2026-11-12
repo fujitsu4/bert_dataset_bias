@@ -24,9 +24,9 @@ if [[ -z "$DATASET" ]]; then
 fi
 
 # Validate dataset
-if [[ ! "$DATASET" =~ ^(snli|mnli|agnews|arxiv)$ ]]; then
+if [[ ! "$DATASET" =~ ^(snli|agnews|arxiv)$ ]]; then
   echo "ERROR: Invalid dataset: $DATASET"
-  echo "Allowed datasets: snli, mnli, agnews, arxiv"
+  echo "Allowed datasets: snli, agnews, arxiv"
   exit 2
 fi
 
