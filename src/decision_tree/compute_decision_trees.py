@@ -1,4 +1,4 @@
-    """
+"""
     compute_decision_trees.py
     Author: Zakaria JOUILIL
 
@@ -28,16 +28,16 @@
 
     """
 
-    import argparse
-    import os
-    import pandas as pd
-    from pathlib import Path
+import argparse
+import os
+import pandas as pd
+from pathlib import Path
 
-    import sys
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 
-    from src.decision_tree.decision_tree_core import (
+from src.decision_tree.decision_tree_core import (
         train_and_extract_rules_from_df,
         DEFAULT_FEATURE_COLS
     )
@@ -45,14 +45,14 @@
     # ---------------------------------------------------------
     # Utility: ensure directory
     # ---------------------------------------------------------
-    def ensure_dir(path: str):
+def ensure_dir(path: str):
         Path(path).mkdir(parents=True, exist_ok=True)
 
 
     # ---------------------------------------------------------
     # Main pipeline
     # ---------------------------------------------------------
-    def main():
+def main():
         parser = argparse.ArgumentParser()
         parser.add_argument("--model", choices=["pretrained", "untrained"], required=True)
         parser.add_argument("--seed", type=int, default=None,
@@ -151,5 +151,5 @@
         print("\n[OK] DONE — All 12 layers processed successfully.")
 
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
         main()
