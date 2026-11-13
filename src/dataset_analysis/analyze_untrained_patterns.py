@@ -26,7 +26,7 @@ Scope conventions:
 CSV delimiter: semicolon.
 
 Usage:
-    !python analyze_untrained_patterns.py \
+    !python -m src.dataset_analysis.analyze_untrained_patterns \
   --root outputs/decision_tree/untrained \
   --output outputs/untrained_stability_analysis_corrected \
   --expected-seeds 30 \

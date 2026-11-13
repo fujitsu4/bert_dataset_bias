@@ -1,8 +1,6 @@
 # bert_dataset_bias
 
 ## A.Project overview
-This project contains scripts used in the article **"Interpreting Attention Allocation Patterns in
-Pretrained BERT Through Decision Trees"**.
 This is a research-oriented framework designed to analyze and characterize bias-related decision patterns in BERT models using interpretable decision trees.
 
 The project follows a structured pipeline that:

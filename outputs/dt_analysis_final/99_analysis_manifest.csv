@@ -1,0 +1,17 @@
+item;value
+trees_parsed;1080
+target_class_paths;4063
+target_class;1
+pattern_definition;"ordered root-to-leaf feature sequence; thresholds/operators ignored"
+pattern_scope;"paths ending in target class; no complementary-path simplification"
+feature_frequency_scope;features counted along target-class paths only
+root_feature_scope;complete trees
+tree_complexity_scope;"complete trees; descriptive/contextual"
+jaccard_empty_empty;"undefined (NaN); excluded from mean and bootstrap"
+bootstrap_method;"seed-level resampling with replacement; pairs of duplicate copies of the same original seed excluded; distinct seed-pair contributions weighted by multiplicity"
+bootstrap_replicates;2000
+subpath_minimum_stability;0.5
+cross_dataset_pattern_comparison;patterns stable at each configured threshold
+thresholds;0.5,0.8,0.9
+expected_seed_count;30
+expected_layers;12

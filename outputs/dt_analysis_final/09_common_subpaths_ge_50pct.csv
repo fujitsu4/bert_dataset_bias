@@ -1,0 +1,124 @@
+dataset;subpath_length;subpath;occurrences;seed_count;stability_rate;minimum_seed_count_threshold;layers_present
+agnews;1;position_in_sentence;2117;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;1;relative_position;372;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;1;token_rank;486;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;1;word_burstiness;241;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;1;word_sentence_frequency;390;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;1;token_length;56;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;1;is_punctuation;49;17;0.5666666666666667;15;1,2,4,5,6,7,9,10,11,12
+agnews;2;position_in_sentence -> position_in_sentence;1133;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;position_in_sentence -> relative_position;101;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;position_in_sentence -> token_rank;170;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;word_sentence_frequency -> position_in_sentence;138;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;position_in_sentence -> word_burstiness;96;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;relative_position -> position_in_sentence;151;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;token_rank -> position_in_sentence;124;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;token_rank -> token_rank;102;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;position_in_sentence -> word_sentence_frequency;76;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;word_burstiness -> position_in_sentence;63;22;0.7333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;2;word_sentence_frequency -> word_sentence_frequency;43;18;0.6;15;1,2,3,4,6,7,8,9,10,11,12
+agnews;2;token_rank -> word_sentence_frequency;38;17;0.5666666666666667;15;1,2,3,4,5,7,8,9,10
+agnews;2;word_sentence_frequency -> token_rank;42;16;0.5333333333333333;15;1,2,3,4,5,6,7,8,10,11,12
+agnews;2;token_rank -> relative_position;30;15;0.5;15;1,2,3,4,5,6,8,9,10,11,12
+agnews;2;word_burstiness -> word_burstiness;43;15;0.5;15;1,2,4,5,6,7,8,9,12
+agnews;3;position_in_sentence -> position_in_sentence -> position_in_sentence;397;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;word_sentence_frequency -> position_in_sentence -> position_in_sentence;101;27;0.9;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;position_in_sentence -> position_in_sentence -> token_rank;113;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;position_in_sentence -> position_in_sentence -> word_burstiness;82;25;0.8333333333333334;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;relative_position -> position_in_sentence -> position_in_sentence;129;25;0.8333333333333334;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;position_in_sentence -> position_in_sentence -> relative_position;62;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;token_rank -> position_in_sentence -> position_in_sentence;74;22;0.7333333333333333;15;1,2,3,4,5,6,7,8,9,10,12
+agnews;3;position_in_sentence -> position_in_sentence -> word_sentence_frequency;56;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+agnews;3;position_in_sentence -> token_rank -> token_rank;34;17;0.5666666666666667;15;1,2,3,4,6,7,8,9,11,12
+agnews;3;token_rank -> token_rank -> position_in_sentence;58;17;0.5666666666666667;15;1,2,3,4,5,6,7,8,9,10,12
+arxiv;1;position_in_sentence;2576;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;relative_position;648;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;token_rank;370;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;word_burstiness;269;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;word_sentence_frequency;474;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;token_relative_frequency;134;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;pos_id;75;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;1;token_length;47;20;0.6666666666666666;15;1,2,3,4,5,7,8,9,10,11,12
+arxiv;2;position_in_sentence -> position_in_sentence;1273;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;position_in_sentence -> relative_position;264;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;position_in_sentence -> token_rank;139;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;relative_position -> position_in_sentence;230;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;token_rank -> position_in_sentence;99;27;0.9;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;word_sentence_frequency -> position_in_sentence;200;27;0.9;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;position_in_sentence -> word_burstiness;97;25;0.8333333333333334;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;position_in_sentence -> word_sentence_frequency;112;25;0.8333333333333334;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;2;word_burstiness -> position_in_sentence;75;24;0.8;15;1,2,3,4,6,7,8,9,10,11,12
+arxiv;2;word_burstiness -> word_sentence_frequency;47;21;0.7;15;1,2,3,4,5,6,7,8,9,10,12
+arxiv;2;token_rank -> token_rank;47;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11
+arxiv;2;position_in_sentence -> token_relative_frequency;46;18;0.6;15;3,4,5,6,8,9,10,11,12
+arxiv;2;position_in_sentence -> pos_id;36;17;0.5666666666666667;15;1,2,3,4,5,6,7,10,11,12
+arxiv;2;relative_position -> token_rank;34;17;0.5666666666666667;15;1,2,3,4,5,6,7,8,9,11
+arxiv;2;token_relative_frequency -> position_in_sentence;34;17;0.5666666666666667;15;2,3,5,6,7,8,9,10,11,12
+arxiv;2;relative_position -> relative_position;48;16;0.5333333333333333;15;1,2,3,4,5,6,7,9,10,11,12
+arxiv;2;token_rank -> relative_position;34;16;0.5333333333333333;15;1,2,3,4,5,7,8,9,10
+arxiv;2;word_sentence_frequency -> relative_position;49;16;0.5333333333333333;15;1,2,3,5,6,8,9,10,11,12
+arxiv;2;word_sentence_frequency -> word_sentence_frequency;32;15;0.5;15;1,2,3,5,7,9,12
+arxiv;3;position_in_sentence -> position_in_sentence -> position_in_sentence;459;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;3;position_in_sentence -> position_in_sentence -> relative_position;163;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;3;relative_position -> position_in_sentence -> position_in_sentence;171;28;0.9333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;3;word_sentence_frequency -> position_in_sentence -> position_in_sentence;119;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;3;position_in_sentence -> position_in_sentence -> token_rank;78;23;0.7666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+arxiv;3;token_rank -> position_in_sentence -> position_in_sentence;42;21;0.7;15;1,2,3,5,6,7,8,9,10,11,12
+arxiv;3;position_in_sentence -> position_in_sentence -> word_burstiness;56;20;0.6666666666666666;15;1,2,3,4,5,6,7,9,10,11
+arxiv;3;position_in_sentence -> relative_position -> position_in_sentence;44;20;0.6666666666666666;15;1,3,4,5,6,7,8,10,11,12
+arxiv;3;position_in_sentence -> position_in_sentence -> word_sentence_frequency;44;19;0.6333333333333333;15;1,2,3,5,6,7,8,9,10,11,12
+arxiv;3;word_burstiness -> position_in_sentence -> position_in_sentence;48;19;0.6333333333333333;15;4,6,7,8,9,10,11,12
+snli;1;position_in_sentence;3391;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;relative_position;1053;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;token_rank;643;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;token_relative_frequency;364;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;word_burstiness;519;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;word_sentence_frequency;626;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;pos_id;135;28;0.9333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;token_length;89;22;0.7333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;next_pos_id;125;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;prev_pos_id;147;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;1;dep_id;51;15;0.5;15;1,2,4,5,6,7,8,9,10,11,12
+snli;2;position_in_sentence -> position_in_sentence;1348;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;position_in_sentence -> relative_position;330;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;position_in_sentence -> token_rank;261;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;relative_position -> position_in_sentence;369;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;token_rank -> position_in_sentence;181;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;word_burstiness -> position_in_sentence;195;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;position_in_sentence -> word_sentence_frequency;211;28;0.9333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;word_sentence_frequency -> position_in_sentence;165;27;0.9;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;position_in_sentence -> word_burstiness;164;26;0.8666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;relative_position -> token_rank;81;25;0.8333333333333334;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;position_in_sentence -> token_relative_frequency;102;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;token_relative_frequency -> position_in_sentence;103;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;word_sentence_frequency -> relative_position;108;24;0.8;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;token_rank -> word_sentence_frequency;63;23;0.7666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;relative_position -> relative_position;69;22;0.7333333333333333;15;1,2,3,4,5,6,9,10,11,12
+snli;2;relative_position -> word_burstiness;46;21;0.7;15;1,2,3,4,5,6,7,8,9,11,12
+snli;2;token_rank -> relative_position;44;19;0.6333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;token_rank -> token_rank;60;19;0.6333333333333333;15;1,2,3,4,6,7,8,9,10,11,12
+snli;2;word_sentence_frequency -> token_relative_frequency;59;19;0.6333333333333333;15;1,2,3,4,5,6,7,8,9,11,12
+snli;2;position_in_sentence -> pos_id;55;18;0.6;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;2;token_relative_frequency -> relative_position;35;18;0.6;15;1,2,3,4,5,6,8,9,10,11,12
+snli;2;word_sentence_frequency -> word_burstiness;42;18;0.6;15;1,2,3,4,6,7,8,9,10,11,12
+snli;2;relative_position -> word_sentence_frequency;49;17;0.5666666666666667;15;1,2,3,4,6,7,8,9,11,12
+snli;2;word_burstiness -> relative_position;36;17;0.5666666666666667;15;1,2,3,5,6,8,10,11,12
+snli;2;token_rank -> token_relative_frequency;38;16;0.5333333333333333;15;1,2,3,4,5,7,8,9,10,12
+snli;2;word_sentence_frequency -> token_rank;35;16;0.5333333333333333;15;1,4,5,6,7,8,9,10,11,12
+snli;2;word_burstiness -> word_burstiness;36;15;0.5;15;1,3,4,6,7,8,9,10,11,12
+snli;2;word_burstiness -> word_sentence_frequency;44;15;0.5;15;1,2,4,6,7,8,9,10,11,12
+snli;3;position_in_sentence -> position_in_sentence -> position_in_sentence;450;30;1.0;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;relative_position -> position_in_sentence -> position_in_sentence;207;29;0.9666666666666667;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;position_in_sentence -> position_in_sentence -> relative_position;137;28;0.9333333333333333;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;position_in_sentence -> position_in_sentence -> token_rank;95;25;0.8333333333333334;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;word_burstiness -> position_in_sentence -> position_in_sentence;83;23;0.7666666666666667;15;1,2,3,4,5,7,8,9,10,11,12
+snli;3;position_in_sentence -> position_in_sentence -> word_sentence_frequency;54;22;0.7333333333333333;15;1,2,3,4,5,6,7,8,9,10,12
+snli;3;position_in_sentence -> token_rank -> position_in_sentence;76;21;0.7;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;position_in_sentence -> relative_position -> position_in_sentence;57;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;token_rank -> position_in_sentence -> position_in_sentence;57;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;word_sentence_frequency -> position_in_sentence -> position_in_sentence;56;20;0.6666666666666666;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;position_in_sentence -> word_sentence_frequency -> position_in_sentence;54;19;0.6333333333333333;15;1,3,4,5,6,7,9,10,11,12
+snli;3;position_in_sentence -> word_burstiness -> position_in_sentence;41;16;0.5333333333333333;15;1,2,3,5,6,7,8,9,11,12
+snli;3;position_in_sentence -> position_in_sentence -> word_burstiness;48;15;0.5;15;1,2,3,4,5,6,7,8,9,10,11,12
+snli;3;position_in_sentence -> token_rank -> word_sentence_frequency;36;15;0.5;15;1,2,3,4,6,7,8,9,10,11
+snli;3;token_relative_frequency -> position_in_sentence -> position_in_sentence;47;15;0.5;15;1,2,3,4,5,7,8,9,10,11,12

@@ -1,0 +1,4 @@
+dataset_1;dataset_2;spearman;kendall;feature_count;feature_scope
+snli;arxiv;0.8629564607042326;0.7506251303439954;21;features occurring in positive-class paths
+snli;agnews;0.8292598358374121;0.676600666226735;21;features occurring in positive-class paths
+arxiv;agnews;0.8179178911232924;0.6667174777384729;21;features occurring in positive-class paths

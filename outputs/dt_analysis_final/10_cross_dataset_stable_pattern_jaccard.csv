@@ -1,0 +1,10 @@
+threshold;minimum_seed_count;dataset_1;dataset_2;stable_pattern_count_dataset_1;stable_pattern_count_dataset_2;stable_pattern_jaccard;shared_stable_pattern_count
+0.5;15;snli;arxiv;4;6;0.6666666666666666;4
+0.5;15;snli;agnews;4;7;0.375;3
+0.5;15;arxiv;agnews;6;7;0.625;5
+0.8;24;snli;arxiv;2;1;0.5;1
+0.8;24;snli;agnews;2;1;0.5;1
+0.8;24;arxiv;agnews;1;1;1.0;1
+0.9;27;snli;arxiv;1;1;1.0;1
+0.9;27;snli;agnews;1;0;0.0;0
+0.9;27;arxiv;agnews;1;0;0.0;0

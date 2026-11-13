@@ -1,0 +1,10 @@
+dataset;threshold;minimum_seed_count;pattern_count
+snli;0.5;15;4
+snli;0.8;24;2
+snli;0.9;27;1
+arxiv;0.5;15;6
+arxiv;0.8;24;1
+arxiv;0.9;27;1
+agnews;0.5;15;7
+agnews;0.8;24;1
+agnews;0.9;27;0
